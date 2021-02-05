@@ -1,4 +1,10 @@
 <main>
+    <h3>Marcus er... </h3>
+    <section class="project">
+        <img src="img/thumbs/thumb2.png" alt="Preview" class="thumb"> <!-- skal laves mindre filstørrelse -->
+        <h4>Min Portfolio</h4>
+        <p>Næste opgave på Digital Media GF2, var at lave egen portfolio side. Det svært at blive tilfreds med resultatet, ud fra hvad jeg har lært indtil videre. Men jeg gør mit bedste.ˇ</p>
+    </section>
     <h3>Seneste projekter</h3>
     <section class="project">
         <img src="img/thumbs/thumb2.png" alt="Preview" class="thumb"> <!-- skal laves mindre filstørrelse -->
