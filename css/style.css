@@ -34,20 +34,20 @@
 html, body {
     padding:0;
     margin:0;
-    font-family: sans-serif;
+    font-family: "Alegreya", sans-serif;
     color: #2c3e50;
     height:100%;
     scroll-behavior: smooth;
 }
 
 body {
-    background:#2c3e50;
+    background: rgb(243, 243, 243);
 }
 
 /* Globals */
 
 h1,h2,h3,h4,h5 {
-    margin: 1em 0  1.5em 0;
+    margin: 1em 0  1em 0;
 }
 
 
@@ -75,11 +75,12 @@ h1,h2,h3,h4,h5 {
 }
 
 .bg {
-    background-image: url("img/05.jpg");
-    min-height: 50%;
+    background-image: url("img/header.jpg");
+    min-height: 30%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0px -25px 50px -25px #000 inset;
 } .bg.frontpage {
     padding-bottom: 50px;
 }
@@ -87,10 +88,15 @@ h1,h2,h3,h4,h5 {
 .wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 30px;
     background: #fafafa;
-} .wrapper.spacing {
-    margin: 30px auto;
+} 
+
+.container {
+    margin-top:-50px;
+    box-shadow: 0 0px 15px 0 rgba(0,0,0, 0.4);
+}
+.spacing {
+    margin: 0 auto 5em auto;
 }
 
 
@@ -124,7 +130,7 @@ header .wrapper {
     margin-bottom:50px;
     color:white;
     max-width: 700px;
-    text-shadow: 3px 3px 8px #35113b;
+    text-shadow: 3px 3px 8px rgba(0,0,0, 0.4);
 }
 
 #tagline h1 {
@@ -142,10 +148,10 @@ header .wrapper {
 #tagline button {
     padding:10px;
     margin: 30px 10px 0 0;
-    background: #2c3e50;
-    border: 0;
-    border-radius: 5px;
-    color:white;
+    background: #3c40c6;
+    border:1px solid #34495e;
+    box-shadow: 1px 1px 0px 0px #c97cb4 inset;
+    color:#2c3e50;
 
 }
 
@@ -187,35 +193,13 @@ nav ul li:last-child {
 
 /* Colors for navbar */
 
-.nav-btn-green {
+.nav-btn-white-outlined {
+    border: 2px solid #fff;
+}
+
+.nav-btn-white {
     color: white;
-}
-.nav-btn-green-inverse {
-    color:white;
-}
 
-.nav-btn-turq {
-    color:white;
-    background: #34e7e4;
-}
-
-.nav-btn-mega {
-    color:white;
-    background: #4bcffa;
-}
-
-.nav-btn-gray {
-    color:white;
-    background:#485460;
-}
-
-.nav-btn-blue {
-    color:white;
-    border-bottom: 5px solid white;
-}
-
-.nav-btn-blue-inverse {
-    color:white;
 }
 
 /* content area */
@@ -224,10 +208,57 @@ main, aside {
     padding: 20px;
 }
 
-main {
-    margin: 0 20px 0 0;
-    max-width: 750px;
+aside {
+    display: none;
 }
+
+main {
+}
+
+main h3 {
+    font-size: 2em;
+    font-family: 'LeagueSpartan-Bold';
+}
+
+main .skill .icon  {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+main .skill {
+
+    padding:20px;
+    margin-right: 20px;
+    background:#dadee0;
+    flex: 1 1 0;
+}
+
+main .skill:last-child {
+    margin:0;
+}
+
+main .skills h4 {
+
+}
+
+main .skill .icon.code  {
+    background-image:url('img/icons/CODE.svg');
+}
+main .skill .icon.curious  {
+    background-image:url('img/icons/MICROSCOPE.svg');
+}
+main .skill .icon.idea  {
+    background-image:url('img/icons/IDEA.svg');
+}
+
+main .skill p {
+    font-size: 12px;
+}
+
 
 section.project  {
     margin-bottom: 20px;
@@ -248,44 +279,7 @@ section.project h4 {
     margin: 0 0 8px 0;
 }
 
-main section.jumbotron {
-    text-align:center;
-    background: rgba(236, 240, 241,0.9);
-    border:1px solid rgba(236, 240, 241,0.8);
-    padding:1em;
-    border-radius:3px;
-    color: rgba(44, 62, 80,1.0);
-    margin-bottom: 1em;
-    box-shadow: 0 5px 20px -5px #424242;
-    display:none;
-}
 
-main section.jumbotron h1 {
-    font-family: 'Alegreya', serif;
-    font-weight:400;
-    font-size: 2em;
-
-}
-
-main section.jumbotron p {
-    font-style: italic;
-    font-size:1em;
-}
-
-main button.call-to-action {
-    padding: 30px 40px 30px 40px;
-    font-size: 1.3em;
-    border-radius: 3px;
-    border:0;
-    background:#27ae60;
-    margin: 0 auto;
-    color:white;
-}
-
-
-footer {
-    background:;
-}
 
 .wrapper.footer {
     background: #34495e;

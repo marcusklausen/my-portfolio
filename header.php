@@ -14,19 +14,18 @@
         <div class="wrapper">
         <nav>
             <ul class="flex ma-right">
-                <a href="index.php"><li class="nav-btn-blue">Forside</li></a>
-                <a href="portfolio.php"><li class="nav-btn-green-inverse">Portfolio</li></a>
-                <a href="contact.php"><li class="nav-btn-green-inverse">Kontakt</li></a>
+                <a href="index.php"><li class="nav-btn-white">Forside</li></a>
+                <a href="portfolio.php"><li class="nav-btn-white">Portfolio</li></a>
+                <a href="contact.php"><li class="nav-btn-white-outlined">Kontakt</li></a>
             </ul>
         </nav>
         <div id="tagline">
             <h1>Marcus Klausen</h1>
             <h2>En ambitiøs frontend udvikler, der er opslugt af programmering og grafisk design.</h2>
             <div class="flex ma-left">
-            <button>Send mig en email</button><button>Hent CV</button>
         </div>
         </div><!-- tagline -->
         </div><!-- wrapper -->
     </header>
     </div><!-- bg -->
-    <div class="wrapper flex ma-center ca-start">
+    <div class="wrapper container box-shadow flex ma-center ca-start">
