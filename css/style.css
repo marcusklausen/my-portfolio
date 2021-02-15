@@ -208,8 +208,6 @@ aside {
     display: none;
 }
 
-main {
-}
 
 main h3 {
     font-size: 2em;
@@ -236,9 +234,7 @@ main .card {
 
 
 
-main .card:last-child {
-    margin:0;
-}
+
 
 main .card h4 {
     margin:1em 0 0.5em 0;
@@ -258,7 +254,11 @@ main .card.portfolio {
     margin-right: 20px;
     flex: 1 1 0;
     border-radius:10px;
-    padding:0;
+    padding:0;   
+    min-height: 180px;
+}
+main .card:last-child {
+    margin:0;
 }
 
 
@@ -280,7 +280,7 @@ main .card.portfolio .caption {
     color:white;
     display: none;
 }
-main .card:hover .caption {
+main .card.portfolio:hover .caption {
     display: block;
 }
 main .card.portfolio .caption p {
