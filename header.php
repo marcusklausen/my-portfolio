@@ -21,7 +21,7 @@
         </nav>
         <div id="tagline">
             <h1>Marcus Klausen</h1>
-            <h2>En ambitiøs frontend udvikler, der er opslugt af programmering og grafisk design.</h2>
+            <h2>En ambitiøs frontend elev, som primært har erfaring med HTML, CSS, JavaScript og PHP.</h2>
             <div class="flex ma-left">
         </div>
         </div><!-- tagline -->

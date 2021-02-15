@@ -47,7 +47,7 @@ body {
 /* Globals */
 
 h1,h2,h3,h4,h5 {
-    margin: 1em 0  1em 0;
+    margin: 0 0 0.5em 0;
 }
 
 
@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .bg {
-    background-image: url("img/header.jpg");
+    background-image: url("img/header.svg");
     min-height: 30%;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,6 +94,7 @@ h1,h2,h3,h4,h5 {
 .container {
     margin-top:-50px;
     box-shadow: 0 0px 15px 0 rgba(0,0,0, 0.4);
+    padding:15px;
 }
 .spacing {
     margin: 0 auto 5em auto;
@@ -143,16 +144,11 @@ header .wrapper {
     font-family: 'Alegreya', sans-serif;
     font-weight: 400;
     line-height: 30px;
+    line-height: 2em;
 }
 
-#tagline button {
+button {
     padding:10px;
-    margin: 30px 10px 0 0;
-    background: #3c40c6;
-    border:1px solid #34495e;
-    box-shadow: 1px 1px 0px 0px #c97cb4 inset;
-    color:#2c3e50;
-
 }
 
 
@@ -163,9 +159,9 @@ header .wrapper {
 
 nav {
     margin: 0 0 0 0;
-    text-shadow: 3px 3px 8px #35113b;
     font-family: 'Alegreya', sans-serif;
     font-size:18px;
+    text-shadow: 3px 3px 8px rgba(0,0,0, 0.4);
 }
 
 nav ul a {
@@ -220,44 +216,81 @@ main h3 {
     font-family: 'LeagueSpartan-Bold';
 }
 
-main .skill .icon  {
+main .card .icon  {
     width: 50px;
     height: 50px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 auto;
+    margin: 0 0;
 }
 
-main .skill {
-
+main .card {
     padding:20px;
     margin-right: 20px;
     background:#dadee0;
     flex: 1 1 0;
+    border-radius:10px;
+    overflow: hidden;
 }
 
-main .skill:last-child {
+
+
+main .card:last-child {
     margin:0;
 }
 
-main .skills h4 {
-
+main .card h4 {
+    margin:1em 0 0.5em 0;
 }
 
-main .skill .icon.code  {
+main .card .icon.code  {
     background-image:url('img/icons/CODE.svg');
 }
-main .skill .icon.curious  {
+main .card .icon.curious  {
     background-image:url('img/icons/MICROSCOPE.svg');
 }
-main .skill .icon.idea  {
+main .card .icon.idea  {
     background-image:url('img/icons/IDEA.svg');
 }
 
-main .skill p {
-    font-size: 12px;
+main .card.portfolio {
+    margin-right: 20px;
+    flex: 1 1 0;
+    border-radius:10px;
+    padding:0;
 }
+
+
+
+main .card.portfolio .img {
+    height:100%;
+    box-shadow: 0px -25px 50px -25px #000 inset;
+}
+
+main .card.portfolio .caption {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 100%);
+    margin:-80px auto 0 auto;
+    width:100%;
+    border-radius:5px;
+    padding:10px;
+    box-sizing: unset;
+    height:65px;
+    color:white;
+    display: none;
+}
+main .card:hover .caption {
+    display: block;
+}
+main .card.portfolio .caption p {
+    font-size:0.9em;
+}
+
+main .card p {
+    font-size: 0.9.em;
+}
+
 
 
 section.project  {
