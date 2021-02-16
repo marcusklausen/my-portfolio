@@ -47,4 +47,4 @@
             </div><!-- wrapper -->
         </header>
     </div><!-- bg -->
-    <div class="wrapper container box-shadow flex ma-center ca-start">
+    <div class="wrapper container box-shado">

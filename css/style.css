@@ -62,6 +62,15 @@ h1,h2,h3,h4,h5 {
     display:flex;
     justify-content:space-between;
 }
+.flex.ma-around {
+    display:flex;
+    justify-content:space-around;
+}
+
+.flex.ma-evenly {
+    display:flex;
+    justify-content:space-evenly;
+}
 
 .flex.ma-right {
     display:flex;
@@ -102,14 +111,16 @@ h1,h2,h3,h4,h5 {
     padding:50px;
 } 
 
-.container {
+.wrapper.container {
     padding:30px;
+    padding-bottom:0;
     margin-top:-50px;
+    margin-bottom:20px;
     box-shadow: 0 0px 15px 0 rgba(0,0,0, 0.4);
     border-top:5px solid #E4C5A9;
 }
 .spacing {
-    margin: 0 auto 3em auto;
+    margin: 0 auto 30px auto;
 }
 
 
@@ -241,12 +252,14 @@ main h3 {
 }
 
 main .card .icon  {
-    width: 30px;
-    height: 30px;
+    width: 180px;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    font-size: 25px;
+    font-family: 'LeagueSpartan-Bold';
 }
 
 main .card {
@@ -257,6 +270,10 @@ main .card {
     max-width: 300px;
 }
 
+.skills  p.more {
+    font-size: 0.8em;
+    margin-top:60px;
+}
 
 
 
@@ -295,7 +312,7 @@ main .card:last-child {
 .skills {
     background-color:#E4C5A9;
     margin:0 -30px;
-    padding:50px 60px 30px 60px;
+    padding:60px;
     border-left: 1px solid #dab697;
     border-right: 1px solid #dab697;
     text-align: center;
@@ -343,7 +360,8 @@ main .card.portfolio .caption {
 /* ------ CALL TO ACTION ------- */
 
 .action {
-    margin-top:3em;
+    margin-top:30px;
+    padding:60px;
 }
 
 .action nav ul a {
@@ -361,15 +379,35 @@ main .card.portfolio .caption {
 
 
 
-.wrapper.footer {
-    color:#34495e;
+footer {
+    color:rgba(255,255,255, 0.5);
+    background: #201E6A;
+    margin:0 -30px;
+    padding:50px 60px 30px 60px;
 }
 
-.wrapper.footer a {
+footer h3 {
+    color: white;
+}
+
+footer a {
     text-decoration: none;
-    color: #EBAB50;
+    color:rgba(255,255,255, 0.5)
 }
 
+footer a:hover {
+    color:rgba(255,255,255, 1);
+}
+
+footer section {
+    width:260px;
+    line-height: 1.5em;
+    border-top: 2px solid rgba(255,255,255, 0.1);
+    padding-top: 10px;
+}
+
+footer section a {
+}
 
 
 /* timeline */

@@ -1,25 +1,24 @@
-</div><!-- wrapper-->
-<div class="wrapper footer">
+
 <footer>
-        <div class="flex ma-center">
+        <div class="flex ma-between">
             <section>
-                <h3>Arnes Portfolio</h3>
-                <p>Paradisæblevej 13</p>
-                <p>1313 Andeby</p>
+                <h3>Marcus Klausen</h3>
+                <p>Digital Media elev</p>
+                <p>E-mail: <a href="mailto:marcusklausen@gmail.com">marcusklausen@gmail.com</a></p>
             </section>
             <section>
                 <h3>Kontakt</h3>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
+                <a href="https://www.linkedin.com/in/marcusklausen/">LinkedIn</a>
             </section>
+
             <section>
-                <h3>Privatlivspolitik</h3>
-                <a href="#">Cookies</a>
-                <a href="#">GDPR</a>
+                <h3>Du søger måske</h3>
+                <p><a href="#">GitHub</a></p>
+                <p><a href="#">Portfolio</a></p>
+                <p><a href="#">Til toppen</a></p>
             </section>
         </div>
-</footer>
-</div>
+</footer></div><!-- wrapper-->
 
 </body>
 </html>
