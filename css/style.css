@@ -145,6 +145,7 @@ header .wrapper {
     font-weight: 400;
     line-height: 30px;
     line-height: 2em;
+    margin-bottom: 1em;
 }
 
 button {
@@ -176,9 +177,9 @@ nav ul {
     min-width:350px;
 }
 
-nav ul li { 
+nav ul a { 
     padding: 10px;
-    margin: 0 3em;
+    margin: 0 1em;
     font-size: 0.8em;
 }
 
@@ -189,14 +190,27 @@ nav ul li:last-child {
 
 /* Colors for navbar */
 
+.nav-btn-white-filled {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #201E6A;
+    text-shadow:none;
+}
+
 .nav-btn-white-outlined {
     border: 2px solid #fff;
+    color:white;
 }
 
 .nav-btn-white {
     color: white;
 
 }
+
+#tagline nav ul a:first-child {
+    margin-left:0;
+}
+
 
 /* content area */
 
@@ -251,9 +265,9 @@ main .card .icon.idea  {
 }
 
 main .card.portfolio {
-    margin-right: 20px;
+    margin-right:;
     flex: 1 1 0;
-    border-radius:10px;
+    border-radius:4px;
     padding:0;   
     min-height: 180px;
 }
