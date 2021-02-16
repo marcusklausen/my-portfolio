@@ -34,37 +34,63 @@
 html, body {
     padding:0;
     margin:0;
-    font-family: sans-serif;
+    font-family: "Alegreya", sans-serif;
     color: #2c3e50;
     height:100%;
+    scroll-behavior: smooth;
 }
 
 body {
-    background:#2c3e50;
+    background: rgb(243, 243, 243);
 }
 
 /* Globals */
 
 h1,h2,h3,h4,h5 {
-    margin: 1em 0  1.5em 0;
+    margin: 0 0 0.5em 0;
 }
 
-.flex-center {
+
+/*  Flexbox */
+
+.flex.ma-center {
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.flex-right {
+.flex.ma-between {
+    display:flex;
+    justify-content:space-between;
+}
+
+.flex.ma-right {
     display:flex;
     justify-content: flex-end;
 }
 
+.flex.ma-left {
+    display:flex;
+    justify-content: flex-start;
+}
+
+
+.flex.ca-start {
+    display:flex;
+    align-items: flex-start;
+}
+
+.flex.ca-end {
+    display:flex;
+    align-items: flex-end;
+}
+
 .bg {
-    background-image: url("img/05.jpg");
+    background-image: url("img/header.svg");
     min-height: 30%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0px -25px 50px -25px #000 inset;
 } .bg.frontpage {
     padding-bottom: 50px;
 }
@@ -72,9 +98,16 @@ h1,h2,h3,h4,h5 {
 .wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 30px;
-} .wrapper.spacing {
-    margin: 30px auto;
+    background: #fafafa;
+} 
+
+.container {
+    padding:30px;
+    margin-top:-50px;
+    box-shadow: 0 0px 15px 0 rgba(0,0,0, 0.4);
+}
+.spacing {
+    margin: 0 auto 3em auto;
 }
 
 
@@ -84,8 +117,11 @@ header {
     height:auto;
     margin-top: 2em;
     margin: 0 1em;
-    padding-top: 3em;
-    
+    padding-top: 3em; 
+}
+
+header .wrapper {
+    background:none;
 }
 
 #logo {
@@ -105,7 +141,7 @@ header {
     margin-bottom:50px;
     color:white;
     max-width: 700px;
-    text-shadow: 3px 3px 8px #35113b;
+    text-shadow: 3px 3px 8px rgba(0,0,0, 0.4);
 }
 
 #tagline h1 {
@@ -118,16 +154,15 @@ header {
     font-family: 'Alegreya', sans-serif;
     font-weight: 400;
     line-height: 30px;
+    line-height: 2em;
+    margin-bottom: 1em;
 }
 
-#tagline button {
+button {
     padding:10px;
-    margin: 30px 0;
-    background: #2c3e50;
-    border: 0;
-    border-radius: 5px;
-    color:white;
 }
+
+
 
 
 
@@ -135,9 +170,9 @@ header {
 
 nav {
     margin: 0 0 0 0;
-    text-shadow: 3px 3px 8px #35113b;
     font-family: 'Alegreya', sans-serif;
     font-size:18px;
+    text-shadow: 3px 3px 8px rgba(0,0,0, 0.4);
 }
 
 nav ul a {
@@ -152,110 +187,164 @@ nav ul {
     min-width:350px;
 }
 
-nav ul li { 
+nav ul a { 
     padding: 10px;
-    margin: 0 3em;
+    margin: 0 1em;
     font-size: 0.8em;
+}
+
+nav ul a:last-child {
+    margin-right: 0;
 }
 
 
 /* Colors for navbar */
 
-.nav-btn-green {
+.nav-btn-white-filled {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #201E6A;
+    text-shadow:none;
+}
+
+.nav-btn-white-outlined {
+    border: 2px solid #fff;
+    color:white;
+}
+
+.nav-btn-white {
     color: white;
-}
-.nav-btn-green-inverse {
-    color:white;
+
 }
 
-.nav-btn-turq {
-    color:white;
-    background: #34e7e4;
+#tagline nav ul a:first-child {
+    margin-left:0;
 }
 
-.nav-btn-mega {
-    color:white;
-    background: #4bcffa;
-}
-
-.nav-btn-gray {
-    color:white;
-    background:#485460;
-}
-
-.nav-btn-blue {
-    color:white;
-    border-bottom: 5px solid white;
-}
-
-.nav-btn-blue-inverse {
-    color:white;
-}
 
 /* content area */
 
-main, aside {
-    background:#ecf0f1;
-    padding: 20px;
-}
-
 main {
-    margin: 0 20px 0 -20px;
-    max-width: 750px;
+    width:100%;
 }
 
-section.project  {
-    margin-bottom: 20px;
-    display: block;
-    float:left;
+aside {
+    display: none;
 }
 
-section.project img {
-    width:100px;
-    height: 100px;
-    float:left;
-    border-radius: 5px;
-    border: 1px solid #dadee0;
-    margin-right: 20px;
-}
 
-section.project h4 {
-    margin: 0 0 8px 0;
-}
-
-main section.jumbotron {
-    text-align:center;
-    background: rgba(236, 240, 241,0.9);
-    border:1px solid rgba(236, 240, 241,0.8);
-    padding:1em;
-    border-radius:3px;
-    color: rgba(44, 62, 80,1.0);
-    margin-bottom: 1em;
-    box-shadow: 0 5px 20px -5px #424242;
-    display:none;
-}
-
-main section.jumbotron h1 {
-    font-family: 'Alegreya', serif;
-    font-weight:400;
+main h3 {
     font-size: 2em;
-
+    font-family: 'LeagueSpartan-Bold';
 }
 
-main section.jumbotron p {
-    font-style: italic;
-    font-size:1em;
+main .card .icon  {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0;
 }
 
-main button.call-to-action {
-    padding: 30px 40px 30px 40px;
-    font-size: 1.3em;
-    border-radius: 3px;
-    border:0;
-    background:#27ae60;
-    margin: 0 auto;
+main .card {
+    margin-right: 20px;
+    flex: 1 1 0;
+    border-radius:10px;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+
+
+
+
+main .card h4 {
+    margin:1em 0 0.5em 0;
+}
+
+main .card .icon.code  {
+    background-image:url('img/icons/CODE.svg');
+}
+main .card .icon.curious  {
+    background-image:url('img/icons/MICROSCOPE.svg');
+}
+main .card .icon.idea  {
+    background-image:url('img/icons/IDEA.svg');
+}
+
+main .card.portfolio {
+    margin-right:20px;
+    flex: 1 1 0;
+    border-radius:0;
+    padding:0;   
+    min-height: 250px;
+}
+main .card:last-child {
+    margin:0;
+}
+
+.featured {
+    padding: 30px;
+}
+
+
+
+.skills {
+    background-color:#E4C5A9;
+    margin:-30px;
+    padding:50px 60px 30px 60px;
+}
+
+.heading-description {
+    margin: 0 0 40px 0;
+}
+
+
+main .card.portfolio .img {
+    height:100%;
+    box-shadow: 0px -25px 50px -25px #000 inset;
+}
+
+main .card.portfolio .caption {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 100%);
+    margin:-80px auto 0 auto;
+    width:100%;
+    border-radius:5px;
+    padding:10px;
+    box-sizing: unset;
+    height:65px;
     color:white;
+    display: none;
 }
+main .card.portfolio:hover .caption {
+    display: block;
+}
+main .card.portfolio .caption p {
+    font-size:0.9em;
+}
+
+main .card p {
+    font-size: 0.9.em;
+}
+
+
+
+
+
+
+
+.wrapper.footer {
+    color:#34495e;
+}
+
+.wrapper.footer a {
+    text-decoration: none;
+    color: #EBAB50;
+}
+
+
 
 /* timeline */
 
