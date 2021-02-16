@@ -99,12 +99,14 @@ h1,h2,h3,h4,h5 {
     max-width: 1100px;
     margin: 0 auto;
     background: #fafafa;
+    padding:50px;
 } 
 
 .container {
     padding:30px;
     margin-top:-50px;
     box-shadow: 0 0px 15px 0 rgba(0,0,0, 0.4);
+    border-top:5px solid #E4C5A9;
 }
 .spacing {
     margin: 0 auto 3em auto;
@@ -244,7 +246,7 @@ main .card .icon  {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 0;
+    margin: 0 auto;
 }
 
 main .card {
@@ -278,7 +280,7 @@ main .card.portfolio {
     flex: 1 1 0;
     border-radius:0;
     padding:0;   
-    min-height: 250px;
+    min-height: 390px;
 }
 main .card:last-child {
     margin:0;
@@ -292,8 +294,11 @@ main .card:last-child {
 
 .skills {
     background-color:#E4C5A9;
-    margin:-30px;
+    margin:0 -30px;
     padding:50px 60px 30px 60px;
+    border-left: 1px solid #dab697;
+    border-right: 1px solid #dab697;
+    text-align: center;
 }
 
 .heading-description {
@@ -302,36 +307,57 @@ main .card:last-child {
 
 
 main .card.portfolio .img {
-    height:100%;
-    box-shadow: 0px -25px 50px -25px #000 inset;
+    height:300px;
+    border: 1px solid #e6e4e4;
 }
 
-main .card.portfolio .caption {
+main .card.portfolio .buttons {
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 100%);
-    margin:-80px auto 0 auto;
+    margin:-95px auto 0 auto;
     width:100%;
     border-radius:5px;
     padding:10px;
     box-sizing: unset;
-    height:65px;
+    height:75px;
     color:white;
     display: none;
 }
-main .card.portfolio:hover .caption {
+main .card.portfolio:hover .buttons {
     display: block;
 }
 main .card.portfolio .caption p {
-    font-size:0.9em;
+    font-size:0.8em;
 }
 
 main .card p {
     font-size: 0.9.em;
 }
 
+main .card.portfolio .caption {
+    height:50px;
+}
 
 
 
+/* ------ CALL TO ACTION ------- */
+
+.action {
+    margin-top:3em;
+}
+
+.action nav ul a {
+    color:#201E6A;
+    box-shadow: none;
+    text-shadow: none;
+    border: 2px solid #201E6A;
+    padding:20px 30px;
+}
+
+.action nav ul a.filled {
+    background:#201E6A;
+    color:white;
+}
 
 
 
