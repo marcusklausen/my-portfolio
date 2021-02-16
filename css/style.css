@@ -55,7 +55,12 @@ h1,h2,h3,h4,h5 {
 
 .flex.ma-center {
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.flex.ma-between {
+    display:flex;
+    justify-content:space-between;
 }
 
 .flex.ma-right {
@@ -72,6 +77,11 @@ h1,h2,h3,h4,h5 {
 .flex.ca-start {
     display:flex;
     align-items: flex-start;
+}
+
+.flex.ca-end {
+    display:flex;
+    align-items: flex-end;
 }
 
 .bg {
@@ -92,12 +102,12 @@ h1,h2,h3,h4,h5 {
 } 
 
 .container {
+    padding:30px;
     margin-top:-50px;
     box-shadow: 0 0px 15px 0 rgba(0,0,0, 0.4);
-    padding:15px;
 }
 .spacing {
-    margin: 0 auto 5em auto;
+    margin: 0 auto 3em auto;
 }
 
 
@@ -183,7 +193,7 @@ nav ul a {
     font-size: 0.8em;
 }
 
-nav ul li:last-child {
+nav ul a:last-child {
     margin-right: 0;
 }
 
@@ -214,8 +224,8 @@ nav ul li:last-child {
 
 /* content area */
 
-main, aside {
-    padding: 20px;
+main {
+    width:100%;
 }
 
 aside {
@@ -229,8 +239,8 @@ main h3 {
 }
 
 main .card .icon  {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,12 +248,11 @@ main .card .icon  {
 }
 
 main .card {
-    padding:20px;
     margin-right: 20px;
-    background:#dadee0;
     flex: 1 1 0;
     border-radius:10px;
     overflow: hidden;
+    max-width: 300px;
 }
 
 
@@ -265,16 +274,31 @@ main .card .icon.idea  {
 }
 
 main .card.portfolio {
-    margin-right:;
+    margin-right:20px;
     flex: 1 1 0;
-    border-radius:4px;
+    border-radius:0;
     padding:0;   
-    min-height: 180px;
+    min-height: 250px;
 }
 main .card:last-child {
     margin:0;
 }
 
+.featured {
+    padding: 30px;
+}
+
+
+
+.skills {
+    background-color:#E4C5A9;
+    margin:-30px;
+    padding:50px 60px 30px 60px;
+}
+
+.heading-description {
+    margin: 0 0 40px 0;
+}
 
 
 main .card.portfolio .img {
@@ -307,31 +331,12 @@ main .card p {
 
 
 
-section.project  {
-    margin-bottom: 20px;
-    display: block;
-    float:left;
-}
 
-section.project img {
-    width:100px;
-    height: 100px;
-    float:left;
-    border-radius: 5px;
-    border: 1px solid #dadee0;
-    margin-right: 20px;
-}
-
-section.project h4 {
-    margin: 0 0 8px 0;
-}
 
 
 
 .wrapper.footer {
-    background: #34495e;
     color:#34495e;
-    border-radius:3px;
 }
 
 .wrapper.footer a {

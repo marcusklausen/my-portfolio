@@ -1,7 +1,14 @@
 <main>
 
-    <h3>Seneste projekter</h3>
-    <div class="flex spacing ma-center">
+    <div class="featured spacing">
+
+    <h3>Fremhævet arbejde</h3>
+    <div class="flex ma-between">
+            <p class="heading-description">Her er mine seneste projekter fra Digital Media uddannelsen. 
+        
+            <p>Se hele min portfolio &#8594;</p>
+    </div>
+    <div class="flex spacing ma-between">
         <div class="card portfolio">
             <div class="img" style="background: url('img/thumbs/mockup.png');
                                     background-position: top center;
@@ -36,9 +43,13 @@
             </div>
         </div><!-- card -->
     </div>
-    <h3>Det jeg er bedst til</h3>
+    </div><!-- featued -->
 
-    <div class="flex spacing ma-center">
+
+    <div class="skills">
+    <h3>Det jeg er bedst til</h3>
+    <p class="heading-description">Her er de teknologier jeg er nået længst med.</p>
+    <div class="flex spacing ma-between">
         <div class="card">
             <div class="icon code"></div><!-- skal laves mindre filstørrelse -->
             <h4>HTML & CSS</h4>
@@ -54,6 +65,7 @@
             <h4>PHP & MySQL</h4>
             <p>Er god til, og ikke bleg for at komme med idéer og forslag, hvis jeg ser en mulighed for, at noget kan forbedres.</p>
         </div>
+    </div>
     </div>
 
 

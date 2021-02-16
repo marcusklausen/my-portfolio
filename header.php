@@ -15,14 +15,14 @@
         <nav>
             <ul class="flex ma-right">
                 <a href="index.php" class="nav-btn-white"><li>Forside</li></a>
-                <a href="portfolio.php class="nav-btn-white"><li>Portfolio</li></a>
+                <a href="portfolio.php" class="nav-btn-white"><li>Portfolio</li></a>
                 <a href="portfolio.php" class="nav-btn-white"><li>GitHub</li></a>
                 <a href="contact.php" class="nav-btn-white-filled"><li>Kontakt</li></a>
             </ul>
         </nav>
         <div id="tagline">
             <h1>Marcus Klausen</h1>
-            <h2>En ambitiøs frontend elev, som primært har erfaring med HTML, CSS, JavaScript og PHP.</h2>
+            <h2>En ambitiøs frontend elev, der primært har erfaring med HTML, CSS, JavaScript og PHP.</h2>
             <div class="flex ma-left">
             <nav>
             <ul class="flex ma-left">
