@@ -40,7 +40,7 @@
             </div>
         </div><!-- card -->
         <div class="card portfolio">
-            <div class="img" style="background: url('img/thumbs/theband.png');
+            <div class="img" style="background: url('img/thumbs/four-in-a-row.png');
                                     background-position: top center;
                                     background-repeat: no-repeat;
                                     background-size: cover;"></div>
@@ -50,8 +50,8 @@
                 <button>Github</button>
             </div>
             <div class="caption">
-                <h4>The Band</h4>
-                <p>Simpel opgave, som bl.a. gør brug fra display:grid.</p>
+                <h4>Fire på stribe</h4>
+                <p>På Team Treehouse's JavaScript track, kunne jeg til sidst, lave et fire på stribe spil, med egen kode.</p>
             </div>
         </div><!-- card -->
     </div>
@@ -65,20 +65,20 @@
         <div class="card">
             <div class="icon">1</div><!-- skal laves mindre filstørrelse -->
             <h4>HTML & CSS</h4>
-            <p>Jeg kan HTML & CSS samt en del JavaScript. Derudover har jeg forståelse for PHP, Swift, objektorienteret programmering og MVC-modellen.</p>
+            <p>Lavede mit første html-dokument i 4. klasse, og har nu arbejdet med statisk web i min fritid, i 13 år.</p>
         </div>
         <div class="card">
             <div class="icon">2</div><!-- skal laves mindre filstørrelse -->
             <h4>JavaScript</h4>
-            <p>Elsker at lære nye ting, specielt når det kommer til webudvikling. Værdsætter absolut folk som kan vise mig forbedrede teknologier, processer med videre.</p>
+            <p>Her kan jeg det fundamentale og har lavet et fire på stribe spil som kan ses på <a href="https://github.com/marcusklausen/four-in-a-row">Github</a>, eller prøves <a href="https://github.com/marcusklausen/four-in-a-row">live</a></p>
         </div>
         <div class="card">
             <div class="icon">3</div><!-- skal laves mindre filstørrelse -->
             <h4>PHP & MySQL</h4>
-            <p>Er god til, og ikke bleg for at komme med idéer og forslag, hvis jeg ser en mulighed for, at noget kan forbedres.</p>
+            <p>Jeg kan oprette databaser, forbinde til dem, og behandle data på en hjemmeside (CRUD).</p>
         </div>
     </div>
-    <p class="more">Derudover har jeg blandt andet, kendskab til Swift, Sass, Photoshop med mere.</p>
+    <p class="more">Derudover har jeg blandt andet, kendskab til Swift, Sass, Wordpress, Git, Photoshop med mere.</p>
     </div>
 
     <div class="action spacing">
