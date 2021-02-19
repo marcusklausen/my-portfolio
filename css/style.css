@@ -209,7 +209,7 @@ nav ul a:last-child {
 .wrapper {
     max-width: 1160px;
     margin: 0 auto;
-    padding:50px;
+    padding:60px;
     position: relative;
 }
 
@@ -319,7 +319,6 @@ header .main-navigation {
 ============================= */
 
 .container {
-    padding:30px;
     padding-bottom:0;
     margin-bottom:20px;
     background: #fafafa;
@@ -500,8 +499,10 @@ main .skills .card p {
 ---------------------------- */
 
 .action {
-    margin-top:0px;
-    padding:30px;
+}
+
+.action .flex {
+    grid-gap: 2em;
 }
 
 .action nav ul a {
@@ -511,6 +512,7 @@ main .skills .card p {
     border: 2px solid #201E6A;
     padding:20px 30px;
     transition: 0.2s;
+    margin:0;
 }
 
 .action nav ul a:hover {
@@ -541,7 +543,7 @@ main .skills .card p {
 footer {
     color:rgba(255,255,255, 0.5);
     background: #201E6A;
-    margin:0 -35px;
+    margin:0 -60px;
     
 }
 
@@ -669,6 +671,10 @@ footer section {
         padding:35px;
     }
 
+    .container {
+        padding:35px;
+    }
+
 
     #tagline h1 {
         font-size: 3em;
@@ -700,5 +706,14 @@ footer section {
         background: #E3A96D;
         /* background:rgb(97, 60, 154); */
         /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
+    }
+
+
+    footer {
+        margin: 0 -35px;
+    }
+
+    footer .wrapper {
+
     }
 }
