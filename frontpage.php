@@ -1,6 +1,6 @@
 <main>
 
-    <div class="featured spacing">
+    <div class="featured spacing" id="featured">
 
     <h3>Fremhævet arbejde</h3>
     <div class="flex ma-between">
@@ -14,29 +14,31 @@
                                     background-position: top center;
                                     background-repeat: no-repeat;
                                     background-size: cover;"></div>
-            <div class="buttons">
+            <div class="overlay">
+            <div class="btn-grp"> 
                 <h4>Se mere</h4>
                 <button>Live site</button>
                 <button>Github</button>
-            </div>
+            </div></div>
             <div class="caption">
                 <h4>Min egen portfolio</h4>
-                <p>Mit eget portfolio site, lavet med html og css. 100% min egen kode.</p>
+                <p>Mit eget portfolio site, lavet med html og css. 100% min egen kode. <a href="#">Læs mere &#8594;</a></p>
             </div>
         </div><!-- card -->
         <div class="card portfolio">
-            <div class="img" style="background: url('img/thumbs/mockup.png');
+            <div class="img" style="background: url('img/thumbs/springboard3.png');
                                     background-position: top center;
                                     background-repeat: no-repeat;
                                     background-size: cover;"></div>
-            <div class="buttons">
-                <h4>Arnes Portfolio</h4>
+            <div class="overlay">
+            <div class="btn-grp"> 
+                <h4>Se mere</h4>
                 <button>Se mere</button>
                 <button>Github</button>
-            </div>
+            </div></div>
             <div class="caption">
-                <h4>Arnes Portfolio</h4>
-                <p>Første projekt på DM. Gav inspiration til egen portfolio.</p>
+                <h4>Humac Springboard</h4>
+                <p>Blev brugt af værkstedspersonalet og kunne bl.a. udregne personale priser. <a href="#">Læs mere &#8594;</a></p>
             </div>
         </div><!-- card -->
         <div class="card portfolio">
@@ -44,14 +46,16 @@
                                     background-position: top center;
                                     background-repeat: no-repeat;
                                     background-size: cover;"></div>
-            <div class="buttons">
-                <h4>Arnes Portfolio</h4>
-                <button>Se mere</button>
-                <button>Github</button>
+            <div class="overlay">
+            <div class="btn-grp"> 
+                    <h4>Se mere?</h4>
+                    <button>Live site</button>
+                    <button>Github</button>
+            </div>
             </div>
             <div class="caption">
                 <h4>Fire på stribe</h4>
-                <p>På Team Treehouse's JavaScript track, kunne jeg til sidst, lave et fire på stribe spil, med egen kode.</p>
+                <p>På Treehouse's JavaScript track, lavede jeg til sidst et fire på stribe spil, med egen kode. <a href="#">Læs mere &#8594;</a></p>
             </div>
         </div><!-- card -->
     </div>
