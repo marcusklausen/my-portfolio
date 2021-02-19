@@ -14,7 +14,7 @@
                 <h3>Du søger måske</h3>
                 <p><a href="#">Github</a></p>
                 <p><a href="#">Portfolio</a></p>
-                <p><a href="#">Til toppen</a></p>
+                <p><a href="#header">Til toppen</a></p>
             </section>
         </div>
     </footer>

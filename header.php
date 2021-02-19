@@ -10,7 +10,7 @@
 
 <body>
     <div class="cover">
-        <header>
+        <header id="header">
             <div class="wrapper">
                 <nav>
                     <ul class="flex ma-right">
