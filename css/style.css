@@ -349,10 +349,11 @@ main h3 {
 ---------------------------- */
 
 main .card {
-    margin-right: 20px;
-    flex: 1 1 0;
     /* border-radius:10px; */
     overflow: hidden;
+    
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 main .card h4 {
@@ -361,25 +362,31 @@ main .card h4 {
 }
 
 main .card p {
-    font-size: 0.9.em;
+    font-size: 0.9em;
 }
 
-main .card:last-child {
-    margin:0;
+main a.card-link {
+    display:block;
 }
 
 /* 6.2 Body, work
 ---------------------------- */
 
 main .work {
-    padding:30px;
+    padding:15px;
+}
+
+main a.card-link {
+
+    flex-grow: 1;
+    flex-basis: 300px;
 }
    
 main .work .featured {
     border-radius:5px;
+    grid-gap: 2em;
 }
 main .card.work {
-    flex: 1 1 0;
     border-radius:0;
     padding:0;   
     /* letter-spacing: 0.03em; */
@@ -387,6 +394,12 @@ main .card.work {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     position: relative;
+    transition: box-shadow 0.25s;
+    height:100%;
+}
+
+main .card.work:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6);
 }
 
 main .card.work h4 {
@@ -408,6 +421,7 @@ main .card.work .caption p {
     font-size:1em;
     line-height:1.5em;
     padding-bottom:10px;
+    color:#2c3e50;
     /* color:white; */
     
 }
@@ -415,8 +429,7 @@ main .card.work .caption p {
 main .card.work .caption a {
     /* color: rgba(255,255,255,0.7); */
 }
-main .card.work .caption a:hover {
-    color: rgba(255,255,255,1);
+main .card.work .caption a:hover{
 }
 
 main .card.work span {
@@ -434,8 +447,13 @@ main .card.work .img {
 ---------------------------- */
 
 .skills {
-    padding:30px;
+    padding:15px;
     text-align: left;
+}
+
+.skills .flex {
+
+    grid-gap: 2em;
 }
 
 
@@ -516,7 +534,12 @@ footer {
     background: #201E6A;
     margin:0 -30px;
     padding:50px 60px 30px 60px;
-    border-radius: 0 5px 5px 0;
+    
+}
+
+footer .flex {
+
+    grid-gap: 2em;
 }
 
 footer h3 {
@@ -537,10 +560,11 @@ footer a:visited {
 }
 
 footer section {
-    width:260px;
     line-height: 1.5em;
     border-top: 2px solid rgba(255,255,255, 0.1);
     padding-top: 10px;
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
 /* 8.0 Misc
@@ -554,6 +578,11 @@ footer section {
 
 
 /*  Flexbox */
+
+.flex.wrap {
+    flex-wrap:wrap;
+    -webkit-flex-wrap: wrap;
+}
 
 .flex.ma-center {
     display:flex;
@@ -584,7 +613,6 @@ footer section {
     justify-content: flex-start;
 }
 
-
 .flex.ca-start {
     display:flex;
     align-items: flex-start;
@@ -593,4 +621,9 @@ footer section {
 .flex.ca-end {
     display:flex;
     align-items: flex-end;
+}
+
+
+@media screen and (max-width: 769px){
+
 }

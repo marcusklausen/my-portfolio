@@ -1,5 +1,5 @@
     <footer>
-        <div class="flex ma-between">
+        <div class="flex wrap ma-between">
             <section>
                 <h3>Marcus Klausen</h3>
                 <p>Digital Media elev</p>
@@ -12,8 +12,8 @@
 
             <section>
                 <h3>Du søger måske</h3>
-                <p><a href="#">Github</a></p>
-                <p><a href="#">Portfolio</a></p>
+                <p><a href="https://github.com/marcusklausen">Github</a></p>
+                <p><a href="?p=work">Portfolio</a></p>
                 <p><a href="#header">Til toppen</a></p>
             </section>
         </div>

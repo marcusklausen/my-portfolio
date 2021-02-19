@@ -14,10 +14,10 @@
             <div class="wrapper">
                 <nav>
                     <ul class="flex ma-right">
-                        <a href="index.php" class="nav-btn-white">
+                        <a href="?p=home" class="nav-btn-white">
                             <li>Forside</li>
                         </a>
-                        <a href="portfolio.php" class="nav-btn-white">
+                        <a href="?p=work" class="nav-btn-white">
                             <li>Portfolio</li>
                         </a>
                         <a href="https://github.com/marcusklausen" class="nav-btn-white">
