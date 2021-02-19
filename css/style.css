@@ -393,7 +393,9 @@ main a.card-link {
    
 main .work .featured {
     border-radius:5px;
-    grid-gap: 2em;
+    gap: 2em;
+    row-gap: 2em;
+    column-gap: 2em;
 }
 main .card.work {
     border-radius:0;
@@ -461,7 +463,7 @@ main .card.work .img {
 
 .skills .flex {
 
-    grid-gap: 2em;
+    gap: 2em;
 }
 
 
@@ -502,7 +504,7 @@ main .skills .card p {
 }
 
 .action .flex {
-    grid-gap: 2em;
+    gap: 2em;
 }
 
 .action nav ul a {
@@ -549,7 +551,7 @@ footer {
 
 footer .flex {
 
-    grid-gap: 2em;
+    gap: 2em;
 }
 
 footer h3 {
@@ -708,12 +710,16 @@ footer section {
         /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
     }
 
+    .vertical-center {
+        top:20%;
+    }
+
 
     footer {
         margin: 0 -35px;
     }
 
-    footer .wrapper {
-
+    .cover {
+        height:86vh;
     }
 }
