@@ -43,9 +43,10 @@ html {
 html, body {
     padding:0;
     margin:0;
-    font-family: "Alegreya", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #2c3e50;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -56,7 +57,10 @@ body {
 h1,h2,h3,h4,h5 {
     margin: 0 0 0.5em 0;
     color: #1d2935;
+    font-weight: 300;
 }
+
+
 
 
 a {
@@ -319,8 +323,7 @@ aside {
 
 
 main h3 {
-    font-size: 2em;
-    font-family: 'LeagueSpartan-Bold';
+    font-size: 2.5em;
 }
 
 
@@ -328,7 +331,7 @@ main h3 {
 main .card {
     margin-right: 20px;
     flex: 1 1 0;
-    border-radius:10px;
+    /* border-radius:10px; */
     overflow: hidden;
     max-width: 300px;
 }
@@ -338,21 +341,44 @@ main .card {
     margin-top:60px;
 }
 
+.skills .card {
+    /* background: #201E6A; */
+    /* color:white; */
+    padding:15px;
+    /* border-radius:15px; */
+    text-align: left;
+    border: 1px solid #CCC;
+}
+
+.skills .card h4 {
+    font-size: 1.2em;
+    /* color: white; */
+}
+
 
 
 
 main .card h4 {
     margin:1em 0 0.5em 0;
+
+    font-size: 1.2em;
+}
+
+main .card a {
+}
+
+main .skills .card p {
+    /* color:white; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
-main .card.portfolio {
+main .card.work {
     margin-right:20px;
     flex: 1 1 0;
     border-radius:0;
     padding:0;   
-    min-height: 390px;
 }
 main .card:last-child {
     margin:0;
@@ -360,13 +386,17 @@ main .card:last-child {
 
 .featured {
     padding: 30px;
+    /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
+    background: rgba(32,	23,	106, 0);
 }
+
 
 
 
 .skills {
     margin:0 -30px;
     padding:60px;
+    /* text-align: center; */
 }
 
 .heading-description {
@@ -374,12 +404,12 @@ main .card:last-child {
 }
 
 
-main .card.portfolio .img {
+main .card.work .img {
     height:300px;
     border: 1px solid #e6e4e4;
 }
 
-main .card.portfolio .overlay {
+main .card.work .overlay {
     background: rgba(0,0,0,0.6);
     margin:-300px auto 0 auto;
     width:100%;
@@ -389,28 +419,25 @@ main .card.portfolio .overlay {
     display: none;
 }
 
-main .card.portfolio .overlay .btn-grp {
+main .card.work .overlay .btn-grp {
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
 }
-main .card.portfolio:hover .overlay {
+main .card.work:hover .overlay {
     display: block;
     position: relative;
     
 }
-main .card.portfolio .caption p {
-    font-size:0.8em;
+main .card.work .caption p {
+    font-size:1em;
 }
 
 main .card p {
     font-size: 0.9.em;
 }
 
-main .card.portfolio .caption {
-    height:50px;
-}
 
 
 
@@ -552,16 +579,19 @@ footer section a {
 
 /* -------- ICONS  --------*/
 .icon  {
-    width: 60px;
-    height: 60px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 25px;
+    font-size: 2em;
     font-family: 'LeagueSpartan-Bold';
+
+    width: 40px;
+    height: 40px;
 }
 
 .icon.cover-icon {
+    width: 60px;
+    height: 60px;
     position: absolute;
     bottom:50px;
     left:50%;
@@ -580,6 +610,15 @@ footer section a {
 }
 .icon.idea  {
     background-image:url('img/icons/IDEA.svg');
+}
+.icon.php  {
+    background-image:url('img/icons/php.svg');
+}
+.icon.css  {
+    background-image:url('img/icons/css.svg');
+}
+.icon.js  {
+    background-image:url('img/icons/js.svg');
 }
 
 /* -------- ICONS  --------*/
