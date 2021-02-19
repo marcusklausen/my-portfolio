@@ -115,7 +115,14 @@ a:visited {
     max-width: 1160px;
     margin: 0 auto;
     padding:50px;
+    position: relative;
 } 
+
+
+.wrapper.full-height {
+    height:70vh;
+}
+
 
 .wrapper.container {
     padding:30px;
@@ -156,6 +163,13 @@ header .wrapper {
 
 /* --------- TAGLINE ------------- */
 
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 
 #tagline nav ul a:first-child {
     margin-left:0;
@@ -164,6 +178,8 @@ header .wrapper {
 #tagline {
     color:white;
     max-width: 700px;
+    padding-right:30px;
+    min-width: none;
     text-shadow: 3px 3px 8px rgba(0,0,0, 0.4);
 }
 
@@ -182,6 +198,8 @@ header .wrapper {
     margin-bottom: 1em;
     color:white;
 }
+
+
 
 button {
     padding:10px;

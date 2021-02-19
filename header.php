@@ -30,7 +30,8 @@
                 </nav>
             </div><!-- wrapper -->
         </header>
-        <div class="wrapper">
+        <div class="wrapper full-height">
+        <div class="vertical-center">
             <div id="tagline">
                 <h1>Hej,</h1>
                 <h2>Mit navn er Marcus. Jeg drømmer om at blive frontend elev, og kan allerede kode HTML, CSS og JavaScript.</h2>
@@ -48,8 +49,10 @@
                 </div>
             </div><!-- tagline -->
 
-            <a href="#featured"><div class="icon cover-icon arrow-down"></div></a>
+        </div><!-- wrapper / vertical center -->
         </div><!-- wrapper -->
+
+        <a href="#featured"><div class="icon cover-icon arrow-down"></div></a>
         </div><!-- cover -->
 
         <div class="wrapper container box-shado">
