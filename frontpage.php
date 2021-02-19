@@ -10,7 +10,7 @@
                                 <li>Hent CV</li>
                             </a>
                             <a href="contact.php" class="nav-btn-white-filled">
-                                <li>Kontakt</li>
+                                <li>Send mig en email</li>
                             </a>
                         </ul>
                     </nav>
@@ -20,52 +20,43 @@
         </div><!-- wrapper / vertical center -->
         </div><!-- wrapper -->
 
-        <a href="#container"><div class="icon cover-icon arrow-down"></div></a>
+        <a href="#to-container"><div class="icon cover-icon arrow-down"></div></a>
         </div><!-- cover -->
 
+        <div id="to-container"></div>
+<div class="scroll-spacing-helper"></div>
         <div class="wrapper container box-shado" id="container">
 
 <main>
 
-    <div class="featured spacing" id="featured">
+    <div class="work spacing">
 
     <h3>Fremhævet arbejde</h3>
-    <div class="flex ma-between">
-            <p class="heading-description">Her er mine seneste projekter fra Digital Media uddannelsen. 
-        
-            <p>Se hele min work &#8594;</p>
+   <div class="heading-description">
+            <p>Her er mine seneste projekter fra Digital Media uddannelsen. 
+            <p><a href="#">Se hele min portfolio &#8594;</a></p>
     </div>
-    <div class="flex spacing ma-between">
+    <div class="flex ma-between featured">
         <div class="card work">
-            <div class="img" style="background: url('img/thumbs/my-work2.png');
+            <div class="img" style="background: url('img/thumbs/my-portfolio2.png');
                                     background-position: top center;
                                     background-repeat: no-repeat;
                                     background-size: cover;"></div>
-            <div class="overlay">
-            <div class="btn-grp"> 
-                <h4>Se mere</h4>
-                <button>Live site</button>
-                <button>Github</button>
-            </div></div>
             <div class="caption">
-                <h4>Min egen work</h4>
-                <p>Mit eget work site, lavet med html og css. 100% min egen kode.<br /><a href="#">Læs mere &#8594;</a></p>
+                <h4>Min egen portfolio</h4>
+                <p>Min egen portfolio, lavet med html og css. 100% min egen kode.</p>
+                <a href="#"><span>Læs mere &#8594;</span></a>
             </div>
         </div><!-- card -->
         <div class="card work">
             <div class="img" style="background: url('img/thumbs/springboard3.png');
                                     background-position: top center;
                                     background-repeat: no-repeat;
-                                    background-size: cover;"></div>
-            <div class="overlay">
-            <div class="btn-grp"> 
-                <h4>Se mere</h4>
-                <button>Se mere</button>
-                <button>Github</button>
-            </div></div>
+                                    background-size: cover;"></div>  
             <div class="caption">
                 <h4>Humac Springboard</h4>
-                <p>Blev brugt af værkstedspersonalet og kunne bl.a. udregne personale priser. <br /><a href="#">Læs mere &#8594;</a></p>
+                <p>Blev brugt af værkstedspersonalet og kunne bl.a. udregne personale priser.</p>
+                <a href="#"><span>Læs mere &#8594;</span></a>
             </div>
         </div><!-- card -->
         <div class="card work">
@@ -73,26 +64,22 @@
                                     background-position: top center;
                                     background-repeat: no-repeat;
                                     background-size: cover;"></div>
-            <div class="overlay">
-            <div class="btn-grp"> 
-                    <h4>Se mere?</h4>
-                    <button>Live site</button>
-                    <button>Github</button>
-            </div>
-            </div>
             <div class="caption">
                 <h4>Fire på stribe</h4>
-                <p>På Treehouse's JavaScript track, lavede jeg til sidst et fire på stribe spil, med egen kode. <br /><a href="#">Læs mere &#8594;</a></p>
+                <p>På Treehouse's JavaScript track, lavede jeg til sidst et fire på stribe spil, med egen kode.</p>
+                <a href="#"><span>Læs mere &#8594;</span></a>
             </div>
         </div><!-- card -->
     </div>
     </div><!-- featued -->
 
 
-    <div class="skills">
-    <h3>Det jeg er bedst til</h3>
-    <p class="heading-description">Her er de teknologier jeg er nået længst med.</p>
-    <div class="flex spacing ma-between">
+    <div class="skills spacing">
+    <h3>Mine færdigheder</h3>
+    <div class="heading-description">
+    <p>Her er de teknologier jeg er nået længst med.</p>
+    </div>
+    <div class="flex ma-evenly">
         <div class="card">
             <div class="icon css"></div><!-- skal laves mindre filstørrelse -->
             <h4>HTML & CSS</h4>
@@ -116,7 +103,7 @@
     <nav>
             <ul class="flex ma-center">
                 <a href="index.php" class="nav-btn-white-outlined"><li >Hent CV</li></a>
-                <a href="contact.php" class="filled"><li>Kontakt</li></a>
+                <a href="contact.php" class="filled"><li>Send mig en email</li></a>
             </ul>
         </nav>
     </div>

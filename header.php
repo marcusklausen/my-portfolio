@@ -23,9 +23,6 @@
                         <a href="https://github.com/marcusklausen" class="nav-btn-white">
                             <li>Github &#8594;</li>
                         </a>
-                        <a href="contact.php" class="nav-btn-white-filled">
-                            <li>Kontakt</li>
-                        </a>
                     </ul>
                 </nav>
             </div><!-- wrapper -->
