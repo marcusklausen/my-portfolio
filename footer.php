@@ -1,4 +1,5 @@
     <footer>
+        <div class="wrapper">
         <div class="flex wrap ma-between">
             <section>
                 <h3>Marcus Klausen</h3>
@@ -17,6 +18,7 @@
                 <p><a href="#header">Til toppen</a></p>
             </section>
         </div>
+</div>
     </footer>
 </div><!-- wrapper-->
 

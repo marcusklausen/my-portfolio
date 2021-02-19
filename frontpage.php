@@ -9,7 +9,7 @@ if (isset($_GET['no-header'])) {
 
 <div id="to-container"></div>
 <div class="scroll-spacing-helper"></div>
-<div class="wrapper container box-shadow" id="container">
+<div class="wrapper container box-shadow">
 
     <main>
 
@@ -63,7 +63,7 @@ if (isset($_GET['no-header'])) {
                         </div><!-- caption -->
                     </div><!-- card -->
                 </a><!-- link wrap -->
-            </div><!-- featued -->
+            </div><!-- flex / featured -->
         </div>
 
 

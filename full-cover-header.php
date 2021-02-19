@@ -2,7 +2,7 @@
         <div class="vertical-center">
             <div id="tagline">
                 <h1>Hej,</h1>
-                <h2>Mit navn er Marcus. Jeg drømmer om at blive frontend elev, og kan allerede kode HTML, CSS og JavaScript.</h2>
+                <h2>Mit navn er Marcus. <br />Jeg drømmer om at blive frontend elev, og kan allerede kode HTML, CSS og JavaScript.</h2>
                 <div class="flex ma-left">
                     <nav>
                         <ul class="flex ma-left">

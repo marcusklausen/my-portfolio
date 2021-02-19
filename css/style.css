@@ -201,7 +201,7 @@ nav ul a:last-child {
 
 .vertical-center {
     position: absolute;
-    top: 50%;
+    top: 30%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -211,6 +211,10 @@ nav ul a:last-child {
     margin: 0 auto;
     padding:50px;
     position: relative;
+}
+
+.wrapper.container {
+    padding-bottom:0;
 }
 
 .wrapper.full-height {
@@ -240,7 +244,6 @@ Purple :rgb(97, 60, 154);
 
 header {
     margin-top: 2em;
-    margin: 0 5em;
     padding-top: 3em;
 }
 
@@ -252,7 +255,6 @@ header .wrapper {
 ---------------------------- */
 
 header nav ul {
-    min-width:350px;
 }
 
 header nav ul a {
@@ -270,6 +272,16 @@ header nav ul a:visited {
     color:white;
 }
 
+header label {
+    display:none;
+}
+
+header .main-navigation {
+    display:flex;
+    justify-content: flex-end;
+}
+
+
 /* 5.2 Header, tagline
 ---------------------------- */
 
@@ -279,14 +291,14 @@ header nav ul a:visited {
 
 #tagline {
     color:white;
-    max-width: 700px;
+    max-width: 800px;
     padding-right:30px;
     min-width: none;
     text-shadow: 3px 3px 8px rgba(0,0,0, 0.4);
 }
 
 #tagline h1 {
-    font-size: 2.7em;
+    font-size: 5em;
     font-family: 'LeagueSpartan-Bold', sans-serif;
     margin:0;
     color:white;
@@ -295,6 +307,7 @@ header nav ul a:visited {
 #tagline h2 {
     font-family: 'Alegreya', sans-serif;
     font-weight: 400;
+    font-size: 2em;
     line-height: 30px;
     line-height: 1.5em;
     margin-bottom: 1em;
@@ -372,9 +385,6 @@ main a.card-link {
 /* 6.2 Body, work
 ---------------------------- */
 
-main .work {
-    padding:15px;
-}
 
 main a.card-link {
 
@@ -447,7 +457,6 @@ main .card.work .img {
 ---------------------------- */
 
 .skills {
-    padding:15px;
     text-align: left;
 }
 
@@ -532,8 +541,7 @@ main .skills .card p {
 footer {
     color:rgba(255,255,255, 0.5);
     background: #201E6A;
-    margin:0 -30px;
-    padding:50px 60px 30px 60px;
+    margin:0 -35px;
     
 }
 
@@ -625,5 +633,72 @@ footer section {
 
 
 @media screen and (max-width: 769px){
+    header label {
+        display:block;
+    }
 
+    header .main-navigation {
+        display:block;
+    }
+
+    header nav label {
+        float:right;
+        width:40px;
+        height:40px;
+    }
+
+    header nav ul.main-navigation {
+        float:right;
+        width:auto;
+    }
+    
+    header .menu-check:checked + ul.main-navigation a {
+        display:block;
+    }
+
+    header ul.main-navigation a {
+        display:none;
+        
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    }
+
+    .wrapper {
+        max-width: 1160px;
+        padding:35px;
+    }
+
+
+    #tagline h1 {
+        font-size: 3em;
+        font-family: 'LeagueSpartan-Bold', sans-serif;
+        margin:0;
+        color:white;
+    }
+
+    #tagline h2 {
+        font-family: 'Alegreya', sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 30px;
+        line-height: 1.25em;
+        margin-bottom: 1em;
+        color:white;
+    }
+
+    .vertical-center {
+        top:35vh;
+    }
+}
+
+@media screen and (max-width:400px) {
+    main .work .featured {
+        padding:  30px;
+        margin: 0 -35px;
+        border-radius: 0;
+        background: #E3A96D;
+        /* background:rgb(97, 60, 154); */
+        /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
+    }
 }

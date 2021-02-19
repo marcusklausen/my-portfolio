@@ -13,7 +13,11 @@
         <header id="header">
             <div class="wrapper">
                 <nav>
-                    <ul class="flex ma-right">
+                <label for="menu-check">
+                    <img src="./css/img/icons/burger-icon.png" alt="Menu">
+                </label>
+                <input type="checkbox" class="menu-check" id="menu-check" style="display:none;">
+                    <ul class="main-navigation">
                         <a href="?p=home" class="nav-btn-white">
                             <li>Forside</li>
                         </a>
@@ -27,3 +31,7 @@
                 </nav>
             </div><!-- wrapper -->
         </header>
+
+
+        
+            
