@@ -12,12 +12,12 @@
     <div class="cover">
         <header id="header">
             <div class="wrapper">
-                <nav>
+                <nav class="main-navigation">
                 <label for="menu-check">
                     <img src="./css/img/icons/burger-icon.png" alt="Menu">
                 </label>
                 <input type="checkbox" class="menu-check" id="menu-check" style="display:none;">
-                    <ul class="main-navigation">
+                    <ul class="menu-items">
                         <a href="?p=home" class="nav-btn-white">
                             <li>Forside</li>
                         </a>
