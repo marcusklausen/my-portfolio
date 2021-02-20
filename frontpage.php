@@ -21,7 +21,7 @@ if (isset($_GET['no-header'])) {
                 <p><a href="?p=work">Se hele min portfolio &#8594;</a></p>
             </div>
 
-            <div class="flex wrap ma-center featured">
+            <div class="grid featured">
                 <a href="?p=case&title=" class="card-link">
                     <div class="card work">
                         <div class="img" style="background: url('img/thumbs/my-portfolio2.png');
