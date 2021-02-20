@@ -169,7 +169,7 @@ nav ul a:last-child {
     height: 60px;
     position: absolute;
     bottom:50px;
-    left:50%;
+    right:50%;
     opacity: 0.8;
     transform: translate(-50%, -50%);
 }
@@ -283,6 +283,7 @@ header label {
 header .main-navigation {
     display:flex;
     justify-content: flex-end;
+    width:100%;
 }
 
 
@@ -680,36 +681,6 @@ footer section {
         display:block;
     }
 
-    header .main-navigation {
-        display:block;
-    }
-
-    header nav label {
-        float:right;
-        width:40px;
-        height:40px;
-    }
-
-    header nav ul.main-navigation {
-        float:right;
-        width:auto;
-    }
-    
-    header .menu-check:checked + ul.main-navigation a {
-        display:block;
-    }
-
-    header ul.main-navigation a {
-        display:none;
-        
-    padding-inline-start: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    }
-
-    footer {
-    }
-
 
 
 
@@ -736,6 +707,31 @@ footer section {
     }
 }
 
+
+@media screen and (max-height:400px) {
+    header {
+        margin:0;
+        padding:0;
+    }
+
+    header .wrapper {
+        padding-top:15px;
+    }
+
+    .icon.cover-icon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom:50px;
+        left:none;
+        right:20px !important;
+
+        opacity: 0.8;
+        transform: translate(-50%, -20%);
+    }
+
+}
+
 @media screen and (max-width:400px) {
     main .work .featured {
         padding:  30px;
@@ -746,8 +742,13 @@ footer section {
         /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
     }
 
+    header {
+        margin:0;
+        padding: 0;
+    }
+
     .vertical-center {
-        top:20%;
+        top:40%;
     }
 
     .action nav ul {
@@ -759,6 +760,7 @@ footer section {
     }
 
     .cover {
-        height:86vh;
+        height:100vh;
+        padding:10vh 0;
     }
 }
