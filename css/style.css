@@ -503,11 +503,15 @@ main .skills .card p {
 /* 6.4 Body, call to action
 ---------------------------- */
 
-.action {
+.action nav ul {
+    display:grid;
+    grid-template-columns: 3fr 4fr;
+    gap:2em;
 }
 
-.action .flex {
-    gap: 2em;
+.action nav {
+    max-width:400px;
+    margin:0 auto;
 }
 
 .action nav ul a {
@@ -746,6 +750,9 @@ footer section {
         top:20%;
     }
 
+    .action nav ul {
+        grid-template-columns: 1fr;
+    }
 
     footer {
 

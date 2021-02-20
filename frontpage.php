@@ -94,7 +94,7 @@ if (isset($_GET['no-header'])) {
 
         <div class="action spacing">
             <nav>
-                <ul class="flex wrap ma-center">
+                <ul>
                     <a href="index.php">
                         <li>Hent CV</li>
                     </a>
