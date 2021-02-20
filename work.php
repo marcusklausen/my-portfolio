@@ -11,7 +11,7 @@
                 <p>Her finder du alle mine projekter i kronologisk rækkefølge.</p>
                 <p><a href="?p=home&no-header">&#8592; Tilbage til forsiden</a></p>
             </div>
-            <div class="flex wrap ma-center">
+            <div class="grid">
                 <a href="?p=case&title=" class="card-link">
                     <div class="card work">
                         <div class="img" style="background: url('img/thumbs/my-portfolio2.png');

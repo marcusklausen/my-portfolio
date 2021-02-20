@@ -227,8 +227,11 @@ nav ul a:last-child {
 
 .grid {
     display:grid;
-    grid-template-columns: repeat(3, 1fr)
-};
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    row-gap: 2em;
+    column-gap: 2em;
+}
 
 /* 4.0 Color Palette
 ============================= */
@@ -397,9 +400,6 @@ main a.card-link {
    
 main .work .featured {
     border-radius:5px;
-    gap: 2em;
-    row-gap: 2em;
-    column-gap: 2em;
 }
 main .card.work {
     border-radius:0;
@@ -659,7 +659,11 @@ footer section {
 
     .grid {
         grid-template-columns: repeat(1, 1fr);
-    };
+    }
+
+    main .card.work .img {
+        height:300px;
+    }
 
 
     header label {
