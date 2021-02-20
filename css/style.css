@@ -353,6 +353,7 @@ main h3 {
 
 .featured {
     padding:  30px;
+    margin:0 -30px;
     background: #E3A96D;
     /* background:rgb(97, 60, 154); */
     /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
@@ -638,12 +639,8 @@ footer section {
 
 @media screen and (max-width:1000px) {
     main .work .featured {
-        padding:  30px;
+        padding:  35px;
         margin: 0 -35px;
-        border-radius: 0;
-        background: #E3A96D;
-        /* background:rgb(97, 60, 154); */
-        /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
     }
 
     main .card.work .img {
@@ -654,12 +651,24 @@ footer section {
 
 @media screen and (max-width: 769px){
 
+    main .work .featured {
+        padding:  30px;
+        margin: 0 ;
+    }
+
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
 
     main .card.work .img {
         height:300px;
+    }
+
+    main .work .featured {
+    }
+
+    .wrapper {
+        padding: 35px;
     }
 
 
@@ -695,15 +704,10 @@ footer section {
     }
 
     footer {
-        margin: 0 -35px;
-        padding: 35px;
     }
 
 
 
-    .container {
-        padding:35px;
-    }
 
 
     #tagline h1 {
