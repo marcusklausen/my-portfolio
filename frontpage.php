@@ -9,8 +9,8 @@ if (isset($_GET['no-header'])) {
 
 <div id="to-container"></div>
 <div class="scroll-spacing-helper"></div>
-<div class="wrapper container box-shadow">
-
+<div class="container box-shadow">
+<div class="wrapper">
     <main>
 
         <div class="work spacing">
@@ -72,7 +72,7 @@ if (isset($_GET['no-header'])) {
             <div class="heading-description">
                 <p>Her er de teknologier jeg er nået længst med.</p>
             </div>
-            <div class="flex ma-evenly wrap">
+                <div class="grid">
                 <div class="card">
                     <div class="icon css"></div><!-- skal laves mindre filstørrelse -->
                     <h4>HTML & CSS</h4>
@@ -106,3 +106,5 @@ if (isset($_GET['no-header'])) {
         </div>
 
     </main>
+    </div>
+    

@@ -213,16 +213,13 @@ nav ul a:last-child {
     position: relative;
 }
 
-.wrapper.container {
-    padding-bottom:0;
-}
 
 .wrapper.full-height {
     height:70vh;
 }
 
 .spacing {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 90px auto;
 }
 
 .grid {
@@ -327,10 +324,11 @@ header .main-navigation {
 
 .container {
     padding-bottom:0;
-    margin-bottom:20px;
+    margin: 0 auto;
     background: #fafafa;
     box-shadow: 0 0px 15px 0 rgba(0,0,0, 0.4);
     border-radius: 5px;
+    max-width: 1160px;
 }
 
 .container p a {
@@ -549,7 +547,6 @@ main .skills .card p {
 footer {
     color:rgba(255,255,255, 0.5);
     background: #201E6A;
-    margin:0 -60px;
     
 }
 
@@ -697,10 +694,12 @@ footer section {
     margin-block-end: 0px;
     }
 
-    .wrapper {
-        max-width: 1160px;
-        padding:35px;
+    footer {
+        margin: 0 -35px;
+        padding: 35px;
     }
+
+
 
     .container {
         padding:35px;
@@ -745,7 +744,7 @@ footer section {
 
 
     footer {
-        margin: 0 -35px;
+
     }
 
     .cover {
