@@ -92,7 +92,7 @@ nav ul a {
     text-decoration: none;
     color: white;
     padding: 15px;
-    margin: 0 1em;
+    margin: 0 1em 0 0;
     font-size: 1em;
 }
 
@@ -169,7 +169,7 @@ nav ul a:last-child {
     height: 60px;
     position: absolute;
     bottom:50px;
-    right:50%;
+    left:50%;
     opacity: 0.8;
     transform: translate(-50%, -50%);
 }
@@ -718,14 +718,20 @@ footer section {
         padding-top:15px;
     }
 
+    #tagline h1 {
+        font-size: 3em;
+    }
+
+    #tagline h2 {
+        font-size: 1.5em;
+    }
+
     .icon.cover-icon {
         width: 40px;
         height: 40px;
         position: absolute;
         bottom:50px;
-        left:none;
-        right:20px !important;
-
+        left:90%;
         opacity: 0.8;
         transform: translate(-50%, -20%);
     }
@@ -745,6 +751,12 @@ footer section {
     header {
         margin:0;
         padding: 0;
+    }
+
+    header .main-navigation {
+        display:flex;
+        justify-content: center;
+        width:100%;
     }
 
     .vertical-center {
