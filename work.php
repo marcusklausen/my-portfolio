@@ -1,3 +1,5 @@
+<?php $result = $conn->query($get_all_portfolio_items);?>
+            
 <div id="to-container"></div>
 <div class="scroll-spacing-helper"></div>
 <div class="container box-shado" id="container">
@@ -12,48 +14,25 @@
                 <p><a href="?p=home&no-header">&#8592; Tilbage til forsiden</a></p>
             </div>
             <div class="grid">
-                <a href="?p=case&title=" class="card-link">
+
+                <?php while($row = $result->fetch_assoc()) { ?>
+
+                <a href="?p=case&id=<?php echo($row['case_id']);?>" class="card-link">
                     <div class="card work">
-                        <div class="img" style="background: url('img/thumbs/my-portfolio2.png');
+                        <div class="img" style="background: url('img/thumb_<?php echo($row['case_id']);?>.png');
                                         background-position: top center;
                                         background-repeat: no-repeat;
                                         background-size: cover;"></div>
                         <div class="caption">
-                            <h4>Min egen portfolio</h4>
-                            <p>Min egen portfolio, lavet med html og css. 100% min egen kode.</p>
+                            <h4><?php echo($row['case_title']);?></h4>
+                            <p><?php echo($row['case_caption']);?></p>
                             <span>Læs mere &#8594;</span>
                         </div><!-- caption -->
                     </div><!-- card -->
                 </a><!-- link wrap -->
+                <?php } ?>
 
-                <a href="?p=case&title=" class="card-link">
-                    <div class="card work">
-                        <div class="img" style="background: url('img/thumbs/springboard3.png');
-                                    background-position: top center;
-                                    background-repeat: no-repeat;
-                                    background-size: cover;"></div>
-                        <div class="caption">
-                            <h4>Humac Springboard</h4>
-                            <p>Blev brugt af værkstedspersonalet og kunne bl.a. udregne personale priser.</p>
-                            <span>Læs mere &#8594;</span>
-                        </div><!-- caption -->
-                    </div><!-- card -->
-                </a><!-- link wrap -->
-
-                <a href="?p=case&title=" class="card-link">
-                    <div class="card work">
-                        <div class="img" style="background: url('img/thumbs/four-in-a-row.png');
-                                    background-position: top center;
-                                    background-repeat: no-repeat;
-                                    background-size: cover;"></div>
-                        <div class="caption">
-                            <h4>Fire på stribe</h4>
-                            <p>På Treehouse's JavaScript track, lavede jeg til sidst et fire på stribe spil, med egen kode.</p>
-                            <span>Læs mere &#8594;</span>
-                        </div><!-- caption -->
-                    </div><!-- card -->
-                </a><!-- link wrap -->
-            </div><!-- flex / featured -->
+        </div>
 
         </div>
 
