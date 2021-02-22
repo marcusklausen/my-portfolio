@@ -1,7 +1,7 @@
 <div id="to-container"></div>
 <div class="scroll-spacing-helper"></div>
-<div class="wrapper container box-shado" id="container">
-
+<div class="container box-shado" id="container">
+<div class="wrapper">
     <main>
 
         <div class="work spacing">
@@ -11,7 +11,7 @@
                 <p>Her finder du alle mine projekter i kronologisk rækkefølge.</p>
                 <p><a href="?p=home&no-header">&#8592; Tilbage til forsiden</a></p>
             </div>
-            <div class="flex wrap ma-center">
+            <div class="grid">
                 <a href="?p=case&title=" class="card-link">
                     <div class="card work">
                         <div class="img" style="background: url('img/thumbs/my-portfolio2.png');
@@ -60,7 +60,7 @@
 
         <div class="action spacing">
             <nav>
-                <ul class="flex ma-center">
+                <ul>
                     <a href="index.php" class="nav-btn-white-outlined">
                         <li>Hent CV</li>
                     </a>
@@ -74,3 +74,4 @@
 
 
     </main>
+    </div>

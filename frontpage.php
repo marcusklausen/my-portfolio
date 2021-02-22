@@ -9,8 +9,8 @@ if (isset($_GET['no-header'])) {
 
 <div id="to-container"></div>
 <div class="scroll-spacing-helper"></div>
-<div class="wrapper container box-shadow">
-
+<div class="container box-shadow">
+<div class="wrapper">
     <main>
 
         <div class="work spacing">
@@ -21,7 +21,7 @@ if (isset($_GET['no-header'])) {
                 <p><a href="?p=work">Se hele min portfolio &#8594;</a></p>
             </div>
 
-            <div class="flex wrap ma-center featured">
+            <div class="grid featured">
                 <a href="?p=case&title=" class="card-link">
                     <div class="card work">
                         <div class="img" style="background: url('img/thumbs/my-portfolio2.png');
@@ -72,7 +72,7 @@ if (isset($_GET['no-header'])) {
             <div class="heading-description">
                 <p>Her er de teknologier jeg er nået længst med.</p>
             </div>
-            <div class="flex ma-evenly wrap">
+                <div class="grid">
                 <div class="card">
                     <div class="icon css"></div><!-- skal laves mindre filstørrelse -->
                     <h4>HTML & CSS</h4>
@@ -94,7 +94,7 @@ if (isset($_GET['no-header'])) {
 
         <div class="action spacing">
             <nav>
-                <ul class="flex wrap ma-center">
+                <ul>
                     <a href="index.php">
                         <li>Hent CV</li>
                     </a>
@@ -106,3 +106,5 @@ if (isset($_GET['no-header'])) {
         </div>
 
     </main>
+    </div>
+    
