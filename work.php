@@ -60,7 +60,7 @@
 
         <div class="action spacing">
             <nav>
-                <ul class="flex ma-center">
+                <ul>
                     <a href="index.php" class="nav-btn-white-outlined">
                         <li>Hent CV</li>
                     </a>
