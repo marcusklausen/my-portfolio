@@ -1,7 +1,7 @@
 <div id="to-container"></div>
 <div class="scroll-spacing-helper"></div>
-<div class="wrapper container box-shado" id="container">
-
+<div class="container box-shado" id="container">
+<div class="wrapper">
     <main>
 
         <div class="work spacing">
@@ -74,3 +74,4 @@
 
 
     </main>
+    </div>
