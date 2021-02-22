@@ -660,7 +660,6 @@ footer section {
         padding:  30px;
         margin: 0 ;
     }
-
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -681,7 +680,9 @@ footer section {
         display:block;
     }
 
-
+    header .main-navigation {
+        justify-content: center;
+    }
 
 
 
@@ -752,15 +753,13 @@ footer section {
         margin:0;
         padding: 0;
     }
-
-    header .main-navigation {
-        display:flex;
-        justify-content: center;
-        width:100%;
+    .scroll-spacing-helper {
+        padding-top:0;
     }
+    
 
     .vertical-center {
-        top:40%;
+        top:35%;
     }
 
     .action nav ul {
@@ -771,8 +770,12 @@ footer section {
 
     }
 
+    .cover .icon.cover-icon {
+        bottom:5vh;
+    }
+
     .cover {
         height:100vh;
-        padding:10vh 0;
+        padding:5vh 0 0 0;
     }
 }
