@@ -17,7 +17,7 @@ if (isset($_GET['no-header'])) {
 
             <h2>Fremhævet arbejde</h2>
             <div class="heading-description">
-                <p>Her er mine seneste projekter fra Digital Media uddannelsen.
+                <p>Her ser du udvalgte projekter, som jeg er mest tilfreds med.
                 <p><a href="?p=work">Se hele min portfolio &#8594;</a></p>
             </div>
 
@@ -25,7 +25,7 @@ if (isset($_GET['no-header'])) {
             <?php while($row = $result->fetch_assoc()) { ?>
                 <a href="?p=case&id=<?php echo($row['case_id']);?>" class="card-link">
                     <div class="card work">
-                        <div class="img" style="background: url('img/thumb_<?php echo($row['case_id']);?>.png');
+                        <div class="img" style="background: url('img/<?php echo($row['case_id']);?>.png');
                                         background-position: top center;
                                         background-repeat: no-repeat;
                                         background-size: cover;"></div>

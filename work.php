@@ -8,7 +8,7 @@
 
         <div class="work spacing">
 
-            <h3>Min portfolio</h3>
+            <h2>Min portfolio</h2>
             <div class="heading-description">
                 <p>Her finder du alle mine projekter i kronologisk rækkefølge.</p>
                 <p><a href="?p=home&no-header">&#8592; Tilbage til forsiden</a></p>
@@ -19,7 +19,7 @@
 
                 <a href="?p=case&id=<?php echo($row['case_id']);?>" class="card-link">
                     <div class="card work">
-                        <div class="img" style="background: url('img/thumb_<?php echo($row['case_id']);?>.png');
+                        <div class="img" style="background: url('img/<?php echo($row['case_id']);?>.png');
                                         background-position: top center;
                                         background-repeat: no-repeat;
                                         background-size: cover;"></div>

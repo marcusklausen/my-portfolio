@@ -352,6 +352,10 @@ aside {
     display: none;
 }
 
+main h1, main h2 {
+    font-size: 2em;
+}
+
 .featured {
     padding:  30px;
     margin:0 -30px;
@@ -568,11 +572,11 @@ img.full-size {
 
 
 .article h2 {
-
+    font-size: 1.17em;
 }
 
 .article h1 {
-    font-size: 2.5em;
+    font-size: 2em;
 
 }
 
@@ -748,11 +752,11 @@ footer section {
         padding-top:15px;
     }
 
-    #tagline h1 {
+    .full-page-intro .title {
         font-size: 3em;
     }
 
-    #tagline h2 {
+    .full-page-into .subtitle h1 {
         font-size: 1.5em;
     }
 
