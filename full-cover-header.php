@@ -1,8 +1,8 @@
 <div class="wrapper full-height">
         <div class="vertical-center">
-            <div id="tagline">
-                <h1>Hej,</h1>
-                <h2>Mit navn er Marcus. <br />Jeg drømmer om at blive frontend elev, og kan allerede kode HTML, CSS og JavaScript.</h2>
+            <div id="full-page-intro">
+                <div class="title">Hej,</div>
+                <div class="subtitle"><h1>Mit navn er Marcus. <br />Jeg drømmer om at blive frontend elev, og kan allerede kode HTML, CSS og JavaScript.<h1></div>
                 <div class="flex ma-left">
                     <nav>
                         <ul class="flex ma-left">
@@ -15,7 +15,7 @@
                         </ul>
                     </nav>
                 </div>
-            </div><!-- tagline -->
+            </div><!-- full page intro -->
 
         </div><!-- wrapper / vertical center -->
         </div><!-- wrapper -->

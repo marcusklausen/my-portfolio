@@ -17,20 +17,24 @@
 
         
             <div class="heading-description">
-                <p>Læs mere om projektet nedenfor.</p>
                 <p><a href="?p=work">&#8592; Tilbage til min portfolio</a></p>
             </div>
 
 
             <div class="grid col-2">
-                <img src="img/<?php echo($row['case_id']);?>.png" class="full-size" alt="">
                 <div>
                     <h2><?php echo($row['case_subtitle']);?></h2>
-                    <?php echo($row['case_text']);?>
-                    <p><a href="<?php echo($row['case_url_livesite']);?>">Gå til live site &#8594;</a></p>
+                    <div class="work-description">
+                        <?php echo($row['case_text']);?>
+                    </div>
 
-                <p><a href="<?php echo($row['case_url_github']);?>">Se kildekoden på github &#8594;</a></p>
+                    <div class="links">
+                    <p><a href="<?php echo($row['case_url_livesite']);?>">Gå til live site &#8594;</a></p>
+                    <p><a href="<?php echo($row['case_url_github']);?>">Se kildekoden på github &#8594;</a></p>
                 </div>
+                </div>
+                <img src="img/<?php echo($row['case_id']);?>.png" class="full-size" alt="">
+            
             </div>
 
 

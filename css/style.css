@@ -291,14 +291,14 @@ header .main-navigation {
 }
 
 
-/* 5.2 Header, tagline
+/* 5.2 Header, full-page-intro
 ---------------------------- */
 
-#tagline nav ul a:first-child {
+#full-page-intro  nav ul a:first-child {
     margin-left:0;
 }
 
-#tagline {
+#full-page-intro {
     color:white;
     max-width: 800px;
     padding-right:30px;
@@ -306,14 +306,14 @@ header .main-navigation {
     text-shadow: 3px 3px 8px rgba(0,0,0, 0.4);
 }
 
-#tagline h1 {
+#full-page-intro .title {
     font-size: 5em;
     font-family: 'LeagueSpartan-Bold', sans-serif;
     margin:0;
     color:white;
 }
 
-#tagline h2 {
+#full-page-intro .subtitle h1 {
     font-family: 'Alegreya', sans-serif;
     font-weight: 400;
     font-size: 2em;
@@ -352,10 +352,6 @@ aside {
     display: none;
 }
 
-main h3 {
-    font-size: 2.5em;
-}
-
 .featured {
     padding:  30px;
     margin:0 -30px;
@@ -364,7 +360,7 @@ main h3 {
     /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
 }
 .heading-description {
-    margin: 0 0 40px 0;
+    margin: 0 0 3em 0;
 }
 
 
@@ -422,11 +418,11 @@ main .card.work:hover {
 
 main .card.work h4 {
     /* letter-spacing: 0.048em; */
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
     /* color:white; */
     /* color:white; */
-    font-family: 'LeagueSpartan-Bold', sans-serif;
+    /* font-family: 'LeagueSpartan-Bold', sans-serif; */
 }
 
 main .card.work .caption {
@@ -557,23 +553,27 @@ img.full-size {
     width:100%;
     height:auto;
     object-fit: cover;
-    box-shadow: 4px 4px 15px  rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     /* margin:0 0 0 -60px; */
 }
 
-p.work-description {
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 5px 5px 0 0;
+.article .work-description {
+    line-height:1.5em;
 }
+
+.article .links {
+    margin-top:3em;
+}
+
 
 .article h2 {
 
-    font-family: 'LeagueSpartan-Bold', sans-serif;
 }
 
 .article h1 {
     font-size: 2.5em;
+
 }
 
 /* 7.0 Footer
@@ -715,14 +715,14 @@ footer section {
 
 
 
-    #tagline h1 {
+    #full-page-intro .title {
         font-size: 3em;
         font-family: 'LeagueSpartan-Bold', sans-serif;
         margin:0;
         color:white;
     }
 
-    #tagline h2 {
+    #full-page-intro .subtitle {
         font-family: 'Alegreya', sans-serif;
         font-weight: 400;
         font-size: 1.5em;
