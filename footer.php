@@ -4,7 +4,7 @@
                 <section>
                     <h3>Marcus Klausen</h3>
                     <p>Digital Media elev</p>
-                    <p>E-mail: <a href="mailto:marcusklausen@gmail.com">marcusklausen@gmail.com</a></p>
+                    <p>E-mail: <a href="mailto:hello@marcusklausen.dk">hello@marcusklausen.dk</a></p>
                 </section>
                 <section>
                     <h3>Kontakt</h3>
