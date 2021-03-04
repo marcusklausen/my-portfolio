@@ -43,7 +43,7 @@
         </div>
 
 
-        <div class="action spacing">
+        <div class="action">
             <nav>
                 <ul>
                     <a href="index.php" class="nav-btn-white-outlined">

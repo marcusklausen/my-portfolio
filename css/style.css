@@ -219,7 +219,7 @@ nav ul a:last-child {
 }
 
 .spacing {
-    margin: 0 auto 90px auto;
+    margin: 0 auto 60px auto;
 }
 
 .grid {
@@ -697,6 +697,12 @@ footer section {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .grid.col-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
     main .card.work .img {
         height:300px;
     }
@@ -726,7 +732,7 @@ footer section {
         color:white;
     }
 
-    #full-page-intro .subtitle {
+    #full-page-intro .subtitle h1 {
         font-family: 'Alegreya', sans-serif;
         font-weight: 400;
         font-size: 1.5em;

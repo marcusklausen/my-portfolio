@@ -37,10 +37,10 @@
         </div>
 
 
-        <div class="action spacing">
+        <div class="action">
             <nav>
                 <ul>
-                    <a href="index.php" class="nav-btn-white-outlined">
+                    <a href="files/Marcus-CV-2021.pdf" class="nav-btn-white-outlined">
                         <li>Hent CV</li>
                     </a>
                     <a href="mailto:hello@marcusklausen.dk" class="filled">

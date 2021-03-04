@@ -68,10 +68,10 @@ if (isset($_GET['no-header'])) {
             <p class="more">Derudover har jeg blandt andet, kendskab til Swift, Sass, Wordpress, Git, Photoshop med mere.</p>
         </div>
 
-        <div class="action spacing">
+        <div class="action">
             <nav>
                 <ul>
-                    <a href="index.php">
+                    <a href="files/Marcus-CV-2021.pdf">
                         <li>Hent CV</li>
                     </a>
                     <a href="mailto:hello@marcusklausen.dk" class="filled">
