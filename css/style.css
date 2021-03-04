@@ -201,7 +201,7 @@ nav ul a:last-child {
 
 .vertical-center {
     position: absolute;
-    top: 30%;
+    top: 47%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -251,12 +251,13 @@ Purple :rgb(97, 60, 154);
 }
 
 header {
-    margin-top: 2em;
-    padding-top: 3em;
+    /* margin-top: 2em; */
+    /* padding-top: 3em; */
 }
 
 header .wrapper {
     background:none;
+    margin-bottom: -30px;
 }
 
 /* 5.1 Header, navigation

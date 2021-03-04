@@ -8,7 +8,7 @@
                 </section>
                 <section>
                     <h3>Kontakt</h3>
-                    <a href="https://www.linkedin.com/in/marcusklausen/">LinkedIn</a>
+                    <p><a href="https://www.linkedin.com/in/marcusklausen/">LinkedIn</a></p>
                 </section>
     
                 <section>
