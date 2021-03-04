@@ -13,7 +13,6 @@
         <header id="header">
             <div class="wrapper">
                 <nav>
-                    
                     <ul class="main-navigation">
                         <a href="?p=home" class="nav-btn-white">
                             <li>Forside</li>
