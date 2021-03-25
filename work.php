@@ -5,7 +5,6 @@
 <div class="container box-shado" id="container">
 <div class="wrapper">
     <main>
-
         <div class="work spacing">
 
             <h2>Min portfolio</h2>
@@ -17,7 +16,7 @@
 
                 <?php while($row = $result->fetch_assoc()) { ?>
 
-                <a href="?p=case&id=<?php echo($row['case_id']);?>" class="card-link">
+                <a href="<?php echo($row['case_id']);?>" class="card-link">
                     <div class="card work">
                         <div class="img" style="background: url('img/<?php echo($row['case_id']);?>.png');
                                         background-position: top center;
@@ -53,4 +52,6 @@
 
 
     </main>
-    </div>
+</div><!-- wrapper -->
+
+

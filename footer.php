@@ -21,9 +21,8 @@
         </div>
     </footer>
 
-
+    <div id="modal-backdrop"></div>
+<script src="script.js"></script>
 </body>
 
 </html>
-
-<script> </script>
