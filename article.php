@@ -1,8 +1,9 @@
+
+<?php require_once('connect.php');?>
+
 <?php $result = $conn->query($get_single_portfolio_item);?>
 
-<div id="to-container"></div>
-<div class="scroll-spacing-helper"></div>
-<div class="container box-shado" id="container">
+<div class="container box-shadox" id="container">
 <div class="wrapper">
     <main>
 

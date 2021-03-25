@@ -21,7 +21,11 @@
         </div>
     </footer>
 
-    <div id="modal-backdrop"></div>
+    <div id="modal-backdrop">
+        <div id="modal-container">
+            
+        </div>
+    </div>
 <script src="script.js"></script>
 </body>
 

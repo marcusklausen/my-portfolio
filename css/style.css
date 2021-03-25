@@ -598,6 +598,15 @@ img.full-size {
     display:none;
 }
 
+#modal-container {
+    margin: auto auto;
+    width:900px;
+}
+
+#modal-container .container {
+    pointer-events: all;
+}
+
 #modal img {
     max-width: 1000px;
     height:auto;
