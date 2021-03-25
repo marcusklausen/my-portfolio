@@ -34,6 +34,12 @@
 html, body {
     padding:0;
     margin:0;
+
+    background: url(img/header.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -243,11 +249,6 @@ Purple :rgb(97, 60, 154);
 .cover {
     height:100vh;
     position:relative;
-    background: url(img/header.svg) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
 }
 
@@ -792,6 +793,8 @@ footer section {
         /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
     }
 
+
+
     header {
         margin:0;
         padding: 0;
@@ -822,5 +825,10 @@ footer section {
 
     .cover {
         height:100vh;
+        background: url(img/header.svg) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 }
