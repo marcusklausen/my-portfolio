@@ -16,7 +16,7 @@
 
                 <?php while($row = $result->fetch_assoc()) { ?>
 
-                <a href="<?php echo($row['case_id']);?>" class="card-link">
+                <a href="<?php echo($row['case_id']);?>" class="card-link <?php if($row['case_grid_size'] == 2) { echo('large');};?>">
                     <div class="card work">
                         <div class="img" style="background: url('img/<?php echo($row['case_id']);?>.png');
                                         background-position: top center;

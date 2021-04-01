@@ -1,8 +1,8 @@
 <div class="wrapper full-height">
         <div class="vertical-center">
-            <div id="full-page-intro">
-                <div class="title">Hej,</div>
-                <div class="subtitle"><h1>Mit navn er Marcus. <br />Jeg drømmer om at blive frontend elev, og kan allerede kode HTML, CSS og JavaScript.<h1></div>
+            <div class="full-page-header">
+                <h1>Marcus Klausen<h1>
+                <h2>Fremtidens frontend udvikler. <br>Kommende frontend elev.</h2>
                 <div class="flex ma-left">
                     <nav>
                         <ul class="flex ma-left">

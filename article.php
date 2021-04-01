@@ -5,16 +5,22 @@
 
 <div class="container box-shadox" id="container">
 <div class="wrapper">
+
     <main>
 
         <div class="article spacing">
 
-
+        
 
 
         <?php while($row = $result->fetch_assoc()) { ?>
-
+            
+            <div class="flex between">
             <h1><?php echo($row['case_title']);?></h1>
+            <a href="" class="close-modal" id="close-modal">
+                <img src="css/img/icons/Close.svg" alt="luk vindue">
+            </a>
+            </div>
 
         
             <div class="heading-description">

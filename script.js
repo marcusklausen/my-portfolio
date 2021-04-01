@@ -1,6 +1,7 @@
 let modalBackdrop = document.querySelector('#modal-backdrop');
 let cardLinks = document.querySelectorAll('a.card-link');
 let modalContainer = document.querySelector('#modal-container');
+let closeModalButton = document.querySelector('#close-modal');
 
 
 cardLinks.forEach(
@@ -42,8 +43,12 @@ modalContainer.addEventListener('click', function(e) {
 });
 
 modalBackdrop.addEventListener('click', function() {
-    this.style.display = 'none';
-    modalContainer.innerHTML = '';
+    closeModal();
+})
+
+closeModalButton.addEventListener('click', function(event) {
+    event.stopPropagation();
+    closeModal();
 })
 
 // Helper functions
@@ -53,4 +58,9 @@ function checkModalHeight() {
         modalContainer.children[0].style.overflow = 'scroll';
         modalContainer.children[0].style.maxHeight = '100vh';
     }
+}
+
+function closeModal() {
+    modalBackdrop.style.display = 'none';
+    modalContainer.innerHTML = '';
 }

@@ -59,6 +59,22 @@ html, body {
     font-style: normal;
   }
 
+  @font-face {
+    font-family:'Bolt';
+    src: url('Bolt Regular.eot');
+	src: local('Bolt-Regular'), local(Bolt Regular),
+		url('Bolt Regular.eot?#iefix') format('embedded-opentype'),
+		url('Bolt Regular.woff2') format('woff2'),
+		url('Bolt Regular.woff') format('woff'),
+		url('Bolt Regular.ttf') format('truetype'),
+		url('Bolt Regular.otf') format('opentype'),
+		url('Bolt Regular.svg#Bolt Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-007D;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
@@ -230,6 +246,8 @@ nav ul a:last-child {
     gap: 2em;
     row-gap: 2em;
     column-gap: 2em;
+
+    grid-auto-flow:dense;
 }
 
 .grid.col-2 {
@@ -298,31 +316,28 @@ header .main-navigation {
 /* 5.2 Header, full-page-intro
 ---------------------------- */
 
-#full-page-intro  nav ul a:first-child {
+.full-page-header  nav ul a:first-child {
     margin-left:0;
 }
 
-#full-page-intro {
+.full-page-header {
     color:white;
     max-width: 800px;
     padding-right:30px;
     min-width: none;
-    text-shadow: 3px 3px 8px rgba(0,0,0, 0.4);
+    text-shadow: -3px 3px 3px rgba(0,0,0, 0.2);
 }
 
-#full-page-intro .title {
-    font-size: 5em;
-    font-family: 'LeagueSpartan-Bold', sans-serif;
+.full-page-header h1 {
+    font-size: 2rem;
+    font-family:'Bolt';
     margin:0;
     color:white;
 }
 
-#full-page-intro .subtitle h1 {
-    font-family: 'Alegreya', sans-serif;
-    font-weight: 400;
-    font-size: 2em;
-    line-height: 30px;
-    line-height: 1.5em;
+.full-page-header h2 {
+    font-family:'Bolt';
+    font-size: 2.5rem;
     margin-bottom: 1em;
     color:white;
 }
@@ -404,6 +419,11 @@ main a.card-link {
     flex-grow: 1;
     flex-basis: 300px;
 }
+
+main a.card-link.large {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
    
 main .work .featured {
     border-radius:5px;
@@ -418,6 +438,9 @@ main .card.work {
     position: relative;
     transition: box-shadow 0.25s;
     height:100%;
+}
+
+main .card.large {
 }
 
 main .card.work:hover {
@@ -584,6 +607,14 @@ img.full-size {
 
 }
 
+a.close-modal img {
+    width:50px;
+    height:auto;
+}
+
+a.close-modal {
+}
+
 /* 6.3 Body, modal
 ---------------------------- */
 
@@ -675,7 +706,7 @@ footer section {
     justify-content: center;
 }
 
-.flex.ma-between {
+.flex.between {
     display:flex;
     justify-content:space-between;
 }
@@ -745,7 +776,7 @@ footer section {
     }
 
     .wrapper {
-        padding: 35px;
+        padding: 1em;
     }
 
 
@@ -759,19 +790,14 @@ footer section {
 
 
 
-    #full-page-intro .title {
-        font-size: 3em;
-        font-family: 'LeagueSpartan-Bold', sans-serif;
+    .full-page-header h1 {
+        font-size: 2em;
         margin:0;
         color:white;
     }
 
-    #full-page-intro .subtitle h1 {
-        font-family: 'Alegreya', sans-serif;
-        font-weight: 400;
-        font-size: 1.5em;
-        line-height: 30px;
-        line-height: 1.25em;
+    .full-page-header h2 {
+        font-size: 2em;
         margin-bottom: 1em;
         color:white;
     }
@@ -792,7 +818,7 @@ footer section {
         padding-top:15px;
     }
 
-    .full-page-intro .title {
+    .full-page-header .title {
         font-size: 3em;
     }
 
@@ -825,6 +851,11 @@ footer section {
     }
 
 
+    .full-page-header {
+        font-size: 0.7rem;
+    }
+
+
 
     header {
         margin:0;
@@ -843,12 +874,6 @@ footer section {
         grid-template-columns: 1fr;
     }
 
-    footer {
-
-    }
-    #full-page-intro .title, #full-page-intro .subtitle   {
-        text-shadow: 2px 2px 5px rgba(0,0,0, 0.6);
-    }
 
     .cover .icon.cover-icon {
         bottom:9vh;
