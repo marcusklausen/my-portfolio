@@ -17,7 +17,7 @@
             
             <div class="flex between">
             <h1><?php echo($row['case_title']);?></h1>
-            <a href="" class="close-modal" id="close-modal">
+            <a href="#" class="close-modal" id="close-modal">
                 <img src="css/img/icons/Close.svg" alt="luk vindue">
             </a>
             </div>

@@ -1,8 +1,7 @@
 let modalBackdrop = document.querySelector('#modal-backdrop');
 let cardLinks = document.querySelectorAll('a.card-link');
 let modalContainer = document.querySelector('#modal-container');
-let closeModalButton = document.querySelector('#close-modal');
-
+let closeModalButton;
 
 cardLinks.forEach(
     function(cardLink, index){
@@ -31,6 +30,11 @@ function getModalContentFrom(id) {
            } else {
                console.log('rekt');
            }
+        closeModalButton = document.querySelector('#close-modal')
+        closeModalButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            closeModal();
+        })
     };
 
     xhttp.open("GET", `article.php?id=${id}`, true);
@@ -46,10 +50,7 @@ modalBackdrop.addEventListener('click', function() {
     closeModal();
 })
 
-closeModalButton.addEventListener('click', function(event) {
-    event.stopPropagation();
-    closeModal();
-})
+
 
 // Helper functions
 
