@@ -11,7 +11,8 @@
 <body>
     <div class="cover">
         <header id="header">
-            <div class="wrapper">
+            <div class="wrapper flex between">
+                <div class="initials">MK</div>
                 <nav>
                     <ul class="main-navigation">
                         <a href="?p=home" class="nav-btn-white">

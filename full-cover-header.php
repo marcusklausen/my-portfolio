@@ -19,6 +19,12 @@
 
         </div><!-- wrapper / vertical center -->
         </div><!-- wrapper -->
+        <div class="scroll-arrow">
 
-        <a href="#to-container"><div class="icon cover-icon arrow-down"></div></a>
+            <a href="#to-container">
+                <div class="icon cover-icon">
+                <div class="triangle"></div>
+            </div></a>
+
+        </div>
         </div><!-- cover -->
