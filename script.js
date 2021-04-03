@@ -27,14 +27,16 @@ function getModalContentFrom(id) {
             // Check if modal height is more than height of viewport
             checkModalHeight();
 
-           } else {
-               console.log('rekt');
-           }
-        closeModalButton = document.querySelector('#close-modal')
-        closeModalButton.addEventListener('click', (event) => {
+            closeModalButton = document.querySelector('#close-modal');
+            closeModalButton.addEventListener('click', (event) => {
             event.preventDefault();
             closeModal();
         })
+
+           } else {
+               console.log('rekt');
+           }
+        
     };
 
     xhttp.open("GET", `article.php?id=${id}`, true);
