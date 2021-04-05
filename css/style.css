@@ -35,12 +35,15 @@
 html, body {
     padding:0;
     margin:0;
-    color:white;
-    background: url(img/bg.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    color:#2c3e50;
+}
+
+body {
+    height:100vh;
+    width:100%;
+    scroll-snap-type: y mandatory;
+    overflow-y:scroll;
+    
 }
 
 
@@ -85,27 +88,26 @@ html, body {
 html {
     font-family: Arial, Helvetica, sans-serif;
     color: #2c3e50;
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 }
 
 h1,h2,h3, h4,h5 {
     margin: 0 0 0.5em 0;
-    color:white;
+    color:#2c3e50;
     font-weight: 700;
 }
 
-a {
-    color:rgba(255, 255, 255, 0.7);
+    a {
+    color: #302c9b;
     text-decoration: none;
 }
 
 a:visited {
-    color:rgba(255, 255, 255, 0.7);
+    color: #302c9b;
 }
 
 a:hover {
-    color:rgba(255, 255, 255, 1);
+    color: #302c9b;
 }
 
 /* 3.1 Globals, navigation
@@ -272,15 +274,26 @@ position: absolute;
 .wrapper {
     max-width: 1160px;
     margin: 0 auto;
-    padding:60px;
+    padding: 0 60px;
     position: relative;
+    width:100%;
 }
 
 
-.wrapper.full-height {
-    height:90vh;
+.cover {
+    height:100vh;
     align-items: center;
     display: flex;
+    scroll-snap-align: start;
+}
+
+.nebula-bg {
+
+    background: url(img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .spacing {
@@ -301,8 +314,8 @@ position: absolute;
     grid-template-columns: repeat(2, 1fr);
 }
  
-============================= */
-/*
+/*============================= 
+
 Blue: #201E6A
 Purple :rgb(97, 60, 154);
 */
@@ -311,15 +324,12 @@ Purple :rgb(97, 60, 154);
 /* 5.0 Header
 ============================= */
 
-.cover {
-    height:100vh;
-    position:relative;
 
-}
 
 header {
-    /* margin-top: 2em; */
-    /* padding-top: 3em; */
+    position:fixed;
+    width:100%;
+    margin-top:2em;
 }
 
 header .wrapper {
@@ -331,6 +341,7 @@ header .initials {
     font-family: 'LeagueSpartan-Bold';
     font-weight: 500;
     font-size: 1.5em;
+    color:white;
 }
 
 /* 5.1 Header, navigation
@@ -400,36 +411,35 @@ header .main-navigation {
 /* 6.0 Body
 ============================= */
 
-.container {
-    padding-bottom:0;
-    margin: 0 auto;
-    max-width: 1160px;
-}
 
-.container p a {
+
+.cover p a {
     font-weight: bold;
 }
 
-.container p {
+.cover p {
     margin-bottom:1em;
 }
 
-main {
-    width:100%;
-}
+
 
 aside {
     display: none;
 }
 
-main h1, main h2 {
-    font-size: 2em;
-}
 
 .featured {
-    /* background:rgb(97, 60, 154); */
-    /* border-bottom: 3px solid rgba(32,	23,	106, 1); */
 }
+.featured-inner {
+
+    padding:20px 20px 20px 20px;
+    background:white;
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+
+
 .heading-description {
     margin: 0 0 3em 0;
 }
@@ -438,27 +448,33 @@ main h1, main h2 {
 /* 6.1 Body, card
 ---------------------------- */
 
-main .card {
+.card {
     /* border-radius:10px; */
     overflow: hidden;
-    
+
     flex-grow: 1;
     flex-basis: 300px;
-
-    box-shadow: 0.5em 0.5em 1.5em rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    transition: 0.25s;
+    box-shadow: 0.2em 0.3em 2em rgba(0, 0, 0, 0.1);
     
 }
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0.2em 0.4em 2em rgba(0, 0, 0, 0.2);
+ }
 
-main .card h4 {
+.card h4 {
     font-size: 1em;
     font-weight: 600;
+    color:#2c3e50;
 }
 
-main .card p {
+ .card p {
     font-size: 0.9em;
 }
 
-main a.card-link {
+a.card-link {
     display:block;
 }
 
@@ -466,54 +482,57 @@ main a.card-link {
 ---------------------------- */
 
 
-main a.card-link {
+ a.card-link {
     flex-grow: 1;
     flex-basis: 300px;
 }
 
-main a.card-link.large {
+a.card-link.large {
     grid-column-start: 1;
     grid-column-end: 3;
 }
    
-main .work .featured {
-    border-radius:5px;
+.work .featured {
 }
-main .card.work {
-    border-radius:0;
+.card.work {
     padding:0;   
     /* letter-spacing: 0.03em; */
     padding:0px;
-    border-radius: 5px;
     position: relative;
-    transition: box-shadow 0.25s;
     height:100%;
-    transition: 0.25s;
 }
 
-main .card.large {
+.card.large {
 }
 
-main .card.work:hover {
-    transform: scale(1.03);
+.card.work:hover {
 }
 
-main .card.work h4 {
+.card.work h4 {
     /* letter-spacing: 0.048em; */
     font-size: 1em;
     font-weight: bold;
+    z-index: 5;
+    color:#2c3e50;
     /* color:white; */
     /* color:white; */
     /* font-family: 'LeagueSpartan-Bold', sans-serif; */
 }
 
-main .card.work .caption {
+.card.work h3 {
+
+    color:#2c3e50;
+}
+
+.card.work .caption {
     padding:20px;
     height:100%;
-    background:white;
+    color:#2c3e50;
+
+    background-color: white;
     /* text-shadow: 1px 1px 2px rgba(0,0,0,0.3); */
 }
-main .card.work .caption p {
+.card.work .caption p {
     font-size:1em;
     line-height:1.5em;
     padding-bottom:10px;
@@ -522,19 +541,19 @@ main .card.work .caption p {
     
 }
 
-main .card.work .caption a {
+.card.work .caption a {
     /* color: rgba(255,255,255,0.7); */
 }
-main .card.work .caption a:hover{
+.card.work .caption a:hover{
 }
 
-main .card.work span {
+.card.work span {
     position:absolute;
     bottom: 20px;
     left:20px;
 }
 
-main .card.work .img {
+.card.work .img {
     height:300px;
 }
 
@@ -543,7 +562,7 @@ main .card.work .img {
 ---------------------------- */
 
 .skills {
-    text-align: left;
+    text-align: center;
 }
 
 .skills .flex {
@@ -557,23 +576,28 @@ main .card.work .img {
     /* color:white; */
     padding:15px;
     border-radius:5px;
-    text-align: center;background: rgb(54,47,179);
-    background: linear-gradient(329deg, rgba(54,47,179,1) 0%, rgba(205,0,214,1) 100%);
+    color:white;
+    min-height:20em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
 }
-
 .skills .card .icon {
     margin: 20px auto;
 }
 
 
-main .skills .card p {
+.skills .card p {
     /* color:white; */
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
 
-.skills .card h4 {
-    font-size: 1.2em;
+.skills .card h3 {
+    font-size: 1.5em;
+    color:white;
     /* color: white; */
 }
 
@@ -683,6 +707,17 @@ a.close-modal {
 #modal-container {
     margin: auto auto;
     width:900px;
+    background:white;
+    border-radius: 3px;
+    color:#2c3e50;
+}
+
+#modal-container h1{
+    color:#2c3e50;
+}
+
+#modal-container a {
+    color:#201E6A;
 }
 
 #modal-container .container {
@@ -828,8 +863,7 @@ footer section {
         height:300px;
     }
 
-    main .work .featured {
-    }
+    main .work .featured {}
 
     .wrapper {
         padding: 1em;

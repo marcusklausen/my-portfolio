@@ -3,7 +3,7 @@
 
 <?php $result = $conn->query($get_single_portfolio_item);?>
 
-<div class="container box-shadox" id="container">
+<div class="modal-container box-shadox" id="container">
 <div class="wrapper">
 
     <main>

@@ -16,6 +16,8 @@ cardLinks.forEach(
 
 
 
+
+
 function getModalContentFrom(id) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {

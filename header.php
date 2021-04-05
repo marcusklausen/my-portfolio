@@ -9,8 +9,7 @@
 </head>
 
 <body>
-    <div class="cover">
-        <header id="header">
+<header id="header">
             <div class="wrapper flex between">
                 <div class="initials">MK</div>
                 <nav>
@@ -27,7 +26,9 @@
                     </ul>
                 </nav>
             </div><!-- wrapper -->
+            
         </header>
+        
 
 
         
