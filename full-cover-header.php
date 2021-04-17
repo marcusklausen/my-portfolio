@@ -1,4 +1,4 @@
-<div class="cover nebula-bg">
+<section class="full-cover-page nebula-bg">
     <div class="wrapper">
         <div class="full-page-header">
             <h1>Marcus Klausen</h1>
@@ -27,4 +27,4 @@
     </a>
 
 </div><!-- scroll arrow-->
-</div><!-- cover -->
+</section>

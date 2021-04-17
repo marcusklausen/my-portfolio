@@ -7,7 +7,7 @@ if (isset($_GET['no-header'])) {
 
 ?>
 
-<div class="cover">
+<section class="full-cover-page" id="to-container">
     <div class="wrapper">
                 <div class="work spacing">
     
@@ -38,19 +38,20 @@ if (isset($_GET['no-header'])) {
     
                 </div>
     
-            <div class="scroll-arrow">
+            
+    </div>
+    <div class="scroll-arrow">
     
                 <a href="#to-container">
-                    <div class="icon cover-icon">
-                        <div class="triangle"></div>
+                    <div class="icon cover-icon black">
+                        <div class="triangle black"></div>
                     </div>
                 </a>
     
             </div>
-    </div>
-</div>
+</section>
 
-<div class="cover">
+<section class="full-cover-page">
     <div class="wrapper">
     <div class="skills spacing">
         <h2>Mine færdigheder</h2>
@@ -91,6 +92,5 @@ if (isset($_GET['no-header'])) {
         </div>-->
 
 </div>
-</div>
 
-</div>
+</section>

@@ -15,6 +15,4 @@ if(isset($_GET['p'])) {
         case 'case' : require_once('article.php');
     }
 } else { require_once('frontpage.php'); }
-
-
 ?>

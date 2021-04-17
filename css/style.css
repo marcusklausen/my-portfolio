@@ -38,14 +38,14 @@ html, body {
     color:#2c3e50;
 }
 
-body {
-    height:100vh;
-    width:100%;
+
+
+.container {
     scroll-snap-type: y mandatory;
     overflow-y:scroll;
-    
+    height:100vh;
+    scroll-behavior: smooth;
 }
-
 
 /* 2.0 Fonts
 ============================= */
@@ -191,7 +191,7 @@ nav ul a:last-child {
 .scroll-arrow {
     display:block;
     bottom:3em;
-position: absolute;
+    position: absolute;
     left:50%;
     transform: translate(-50%, -50%);
 
@@ -206,17 +206,25 @@ position: absolute;
         animation: down 1.5s infinite;
         -webkit-animation: down 1.5s infinite;
     }
+    .icon.cover-icon .triangle.black {
+        border-left: 2px solid rgb(0, 0, 0);
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
 
+    .icon.cover-icon.black {
+
+        border: 2px solid black;
+    }
  .icon.cover-icon .triangle {
         content: '';
         position: absolute;
-        top: 15px;
-        left: 18px;
+        top: 25%;
+        left:55%;
+        transform: rotate(-45deg) translate(-50%, -50%);
         width: 18px;
         height: 18px;
         border-left: 2px solid rgb(255, 255, 255);
-      border-bottom: 2px solid rgb(255, 255, 255);
-        transform: rotate(-45deg);
+        border-bottom: 2px solid rgb(255, 255, 255);
     }
 
     @keyframes down {
@@ -268,9 +276,6 @@ position: absolute;
 /* 3.4 Globals, helpers
 ---------------------------- */
 
-.vertical-center {
-}
-
 .wrapper {
     max-width: 1160px;
     margin: 0 auto;
@@ -280,7 +285,7 @@ position: absolute;
 }
 
 
-.cover {
+section.full-cover-page {
     height:100vh;
     align-items: center;
     display: flex;
@@ -347,8 +352,7 @@ header .initials {
 /* 5.1 Header, navigation
 ---------------------------- */
 
-header nav ul {
-}
+
 
 header nav ul a {
     transition: border .25s;
@@ -428,8 +432,6 @@ aside {
 }
 
 
-.featured {
-}
 .featured-inner {
 
     padding:20px 20px 20px 20px;
@@ -491,21 +493,13 @@ a.card-link.large {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-   
-.work .featured {
-}
+
 .card.work {
     padding:0;   
     /* letter-spacing: 0.03em; */
     padding:0px;
     position: relative;
     height:100%;
-}
-
-.card.large {
-}
-
-.card.work:hover {
 }
 
 .card.work h4 {
@@ -539,12 +533,6 @@ a.card-link.large {
     color:#2c3e50;
     /* color:white; */
     
-}
-
-.card.work .caption a {
-    /* color: rgba(255,255,255,0.7); */
-}
-.card.work .caption a:hover{
 }
 
 .card.work span {
@@ -687,8 +675,7 @@ a.close-modal img {
     height:auto;
 }
 
-a.close-modal {
-}
+
 
 /* 6.3 Body, modal
 ---------------------------- */
@@ -863,7 +850,6 @@ footer section {
         height:300px;
     }
 
-    main .work .featured {}
 
     .wrapper {
         padding: 1em;
